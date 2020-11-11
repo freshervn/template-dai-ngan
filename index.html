@@ -14,6 +14,8 @@
 
     <!-- fontawesome 5 icon-->
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <!--  icon google -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <!-- bootrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -43,46 +45,279 @@
 
 <!-- body -->
 <body>
-    <header class="container-fluid">           
-        <ul class="contact">
-            <li class="search-shop">
-                <i class="fas fa-search-location"></i><a href="">tìm kiếm cửa hàng</a>   
-                <div class="dropdown shop-location">
-                    <a class="dropdown-item" href="#"><i class="fas fa-map-marker-alt"></i> địa điểm A</a>
-                    <a class="dropdown-item" href="#"><i class="fas fa-map-marker-alt"></i>địa điểm B</a>
-                    <a class="dropdown-item" href="#"><i class="fas fa-map-marker-alt"></i>địa điểm C</a>
+
+    <header>      
+        <!-- header contact -->
+        <div class="header-contact container-fluid">
+            <ul class="contact">
+                <li class="search-shop">
+                    <i class="fas fa-search-location"></i><a href="">tìm kiếm cửa hàng</a>   
+                    <div class="dropdown shop-location">
+                        <a class="dropdown-item" href="#"><i class="fas fa-map-marker-alt"></i> địa điểm A</a>
+                        <a class="dropdown-item" href="#"><i class="fas fa-map-marker-alt"></i>địa điểm B</a>
+                        <a class="dropdown-item" href="#"><i class="fas fa-map-marker-alt"></i>địa điểm C</a>
+                    </div>
+                </li>
+                <li>
+                    <i class="fas fa-truck"></i><a href="">vận chuyển miễn phí</a>
+                </li>
+                <li><i class="  fas fa-phone-alt"></i>                
+                    Hotline:
+                    <a href="">02866841931</a> -
+                    <a href="">09877219131</a>
+                </li>
+            </ul>
+            <ul class="social-network">
+                <li>mạng xã hội</li>
+                <br>
+                <li><a href=""><i class="   fab fa-facebook"></i></a></li>
+                <li><a href=""><i class="  fab fa-facebook"></i></a></li>
+                <li><a href=""><i class="   fab fa-facebook"></i></a></li>
+            </ul>
+        </div>             
+
+        <!-- logo-cart -->
+        <div class="container logo-cart">
+            <div class="row">       
+                <aside class="left col-lg-7" style="display: flex;">
+                    <a class="logo" href="#"><img src="img/logo_blank.png"></a>
+                    <h4>Chất lượng tạo niềm tin, uy tín tạo chất lượng</h4>
+                </aside>
+
+                <aside class="right row col-lg-5">
+                    <button><i class="  fas fa-shopping-cart"><span>0</span></i></button>
+                    <!-- số lượng sản phẩm đã mua -->                
+                    <form>
+                        <input type="search" name="search" placeholder="Tìm kiếm">
+                    </form>
+                </aside>
+            </div>
+        </div>
+    </header>
+
+    <!-- nav -->
+    <div class="navbar-background">        
+        <nav class="navbar navbar-expand-lg navbar-light container">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class='fas fa-bars'></i> danh mục sản phẩm
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <div class="continous-dropdown">                        
+                        <a class="dropdown-item" href="#">1. Bàn đại ngân</a>
+                        <div class="dropdown-dropdown-item">
+                                <a href="">Bàn inox</a>
+                                <div class="dropdown-3-item">
+                                    <a href="">bộ bàn ghế inox</a>
+                                    <a href="">bộ tròn inox</a>
+                                    <a href="">bộ inox vuông</a>
+                                </div>
+                            <a href="">bàn ăn công nghiệp</a>
+                            <a href="">bàn gế nhà hàng</a>
+                            <a href="">bàn văn phòng</a>
+                            <a href="">bàn ghế cafe</a>
+                        </div>
+                    </div>
+                    <div class="continous-dropdown">                        
+                        <a class="dropdown-item" href="#">2. Bàn gế trường học</a>
+                        <div class="dropdown-dropdown-item">
+                            <a href="">bàn ghế học sinh</a>
+                            <a href="">bàn ghế sinh viên</a>
+                            <a href="">bàn ghế giáo viên</a>
+                            <a href="">bàn ghế mầm non</a>
+                            <a href="">bàn thông minh</a>
+                        </div>
+                    </div>
+                    <div class="continous-dropdown">                        
+                     <a class="dropdown-item" href="#">3. Gế đại ngân</a>
+                     <div class="dropdown-dropdown-item">
+                        <a href="">ghế nhựa</a>
+                        <a href="">ghế inox cao cấp</a>
+                          <div class="dropdown-3-item">
+                                    <a href="">bộ bàn ghế inox</a>
+                                    <a href="">bộ tròn inox</a>
+                                    <a href="">bộ inox vuông</a>
+                                </div>
+                        <a href="">ghế HS-SV</a>
+                        <a href="">ghế cafe</a>
+                        <a href="">ghế hội trường</a>
+                        <a href="">ghế xoay văn phòng</a>
+                        <a href="">ghế phòng chờ</a>
+                        <a href="">ghế phòng họp</a>
+                        <a href="">ghế xích đu</a>
+                        <a href="">ghế nhà hàng</a>
+                    </div>
                 </div>
-            </div>             
-        </li>
-        <li>
-            <i class="fas fa-truck"></i><a href="">vận chuyển miễn phí</a>
-        </li>
-        <li><i class="  fas fa-phone-alt"></i>                
-            Hotline:
-            <a href="">02866841931</a> -
-            <a href="">09877219131</a>
-        </li>
-    </ul>
-    <ul class="social-network">
-        <li>mạng xã hội</li>
-        <br>
-        <li><a href=""><i class="  fab fa-facebook-square"></i></a></li>
-        <li><a href=""><i class="  fab fa-facebook-square"></i></a></li>
-        <li><a href=""><i class="  fab fa-facebook-square"></i></a></li>
-    </ul>
-</header>
-<nav></nav>
+                <div class="continous-dropdown">                        
+                 <a class="dropdown-item" href="#">4. Giường</a>
+                 <div class="dropdown-dropdown-item">
+                    <a href="">giường tầng</a>
+                    <a href="">gường</a>
+                </div>
+            </div>
+            <div class="continous-dropdown">                        
+              <a class="dropdown-item" href="#">5. Thiết bị y tế</a>
+              <div class="dropdown-dropdown-item">
+                <a href="">giường y tế</a>
+                <a href="">tủ y tế</a>
+                <a href="">dụng cụ y tế</a>
+            </div>
+        </div>
+        <div class="continous-dropdown">                        
+          <a class="dropdown-item" href="#">6. Thiết bị bếp công nghiệp</a>
+          <div class="dropdown-dropdown-item">
+            <a href="">bàn chế biến</a>
+            <a href="">xe đẩy inox</a>
+            <a href="">bồn rửa inox</a>
+            <a href="">bếp inox</a>
+            <a href="">nồi hấp inox</a>
+            <a href="">máy hút khói inox</a>
+        </div>
+    </div>
+    <div class="continous-dropdown">                        
+      <a class="dropdown-item" href="#">7. Kệ</a>
+      <div class="dropdown-dropdown-item">
+        <a href="">kệ inox</a>
+        <a href="">kệ sắt</a>
+    </div>
+</div>
+<div class="continous-dropdown">                        
+ <a class="dropdown-item" href="#">8. Thiết bị trường học</a>
+ <div class="dropdown-dropdown-item">
+    <a href="">tủ úp ly</a>
+    <a href="">giá phơi khăn</a>
+    <a href="">bục tượng Bác</a>
+    <a href="">bục phát biểu</a>
+</div>
+</div>                        
+<a class="dropdown-item" href="#">9. Khay inox</a>
+
+<div class="continous-dropdown">                        
+  <a class="dropdown-item" href="#">10. Tủ tài liệu văn phòng</a>
+  <div class="dropdown-dropdown-item">
+    <a href="">tủ sắt</a>
+    <a href="">tủ gỗ</a>
+    <a href="">tủ locker</a>
+</div>
+</div>                     
+<a class="dropdown-item" href="#">11.võng inox</a>                  
+<a class="dropdown-item" href="#">12. nệm đại ngân</a>
+</div>
+</li>
+<li class="nav-item active">
+    <a class="nav-link" href="#">tư vấn nội thất</a>
+</li>
+<li class="nav-item active">
+    <a class="nav-link" href="#">giới thiệu</a>
+</li>
+
+<li class="nav-item active">
+    <a class="nav-link" href="#">dự án tiêu biểu</a>
+</li>
+<li class="nav-item">
+    <a class="nav-link" href="#">tin tức</a>
+</li>
+</ul>
+</div>
+</nav>
+</div>
+<!-- banner -->
+<div class="banner">
+    <img class="banner-background" src="img/banner.jpg">
+    <div class="content">
+
+        <h1>
+            bàn gế nội thất công nghiệp - trường học và gia đình đại ngân
+        </h1>
+        <button><h4>sản phẩm mới</h4></button>
+    </div>
+</div>
 <main>
-    <article>
-        <section>
-            <aside>
-            </aside>
-        </section>
-    </article>
 </main>
-<footer></footer>
-</body>  
+<footer>
+    <div class="container">
+        <div class="row">
+          <aside class=" col-md-4 company">
+              <img src="img/logo_blank.png">
+              <h5>Chất lượng tạo niềm tin, uy tín tạo chất lượng</h5>
+              <ul>
+                  <li><i class=" fab fa-facebook"></i></li>
+                  <li><i class=" fab fa-facebook"></i></li>
+                  <li><i class=" fab fa-facebook"></i></li>
+              </ul>
+          </aside>  
+          <aside class="col-md-4  direction ">
+<!--              <h6>PHÂN PHỐI TẠI HÀ NỘI</h6>
+             <p>
+                109 ĐT923, An Bình, Ninh Kiều, Cần Thơ, Việt Nam
+                +84 292 3846 007
+                2P2V+R8 Ninh Kiều, Cần Thơ, Việt Nam
+            </p>
+        -->            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1006548.1602142528!2d105.19847603248445!3d9.780553586167285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31a089af7d76910f%3A0x9e8f12184216d9e2!2zQ8O0bmcgdHkgVE5ISCBUaMawxqFuZyBN4bqhaSBE4buLY2ggVuG7pSDEkOG6oWkgTmfDom4!5e0!3m2!1svi!2s!4v1605107038076!5m2!1svi!2s" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </aside>
+    <aside class="col-md-4  receive-messages">
+        <h4>Đăng ký nhận tin nhắn</h4>
+        <form action="#">                
+            <label for="name">Họ và tên</label>
+            <input type="text" name="name" placeholder="Họ và tên">
+            <label for="phone-number">số điện thoại</label>
+            <input type="tel" name="phone-number" placeholder="Số điện thoại">
+            <label for="email">Email</label>
+            <input type="email" name="email" placeholder="Email">
+            <button>đăng ký</button>
+        </form>
+    </aside>
+</div>        
+</div>
+</footer>
+<div id="sticker-desktop">
+    <button class="open-chat"><i class="fas fa-comments"></i></button>
+    <h5>chúng tôi có thể giúp gì cho bạn</h5>
+    <div class="box-chat">       
+        <div class="container">
+            <img src="img/logo_blank.png" alt="Avatar" style="width:100%;">
+            <p>Hello. How are you today?</p>
+            <span class="time-right">11:00</span>
+        </div>
+
+        <div class="container darker">
+          <img src="img/logo_blank.png" alt="Avatar" class="right" style="width:100%;">
+          <p>Hey! I'm fine. Thanks for asking!</p>
+          <span class="time-left">11:01</span>
+      </div>
+  </div>
+  <button class="close"><i class="fas fa-window-close"></i></button>
+</div>
+<!-- an hien sticker -->
+<script type="text/javascript">
+ $('#sticker-desktop .open-chat').click(function(){
+    $('#sticker-desktop').css({'background':'var(--color-theme-1)','box-shadow':'2px 2px 2px 2px var(--color-theme-1)'});
+    $('#sticker-desktop > *').css('display','block');
+    $('.open-chat').css('display','none');
+});
+ $('#sticker-desktop .close').click(function(){
+    $('#sticker-desktop').css({'background':'transparent','box-shadow':'none'});
+    $('#sticker-desktop >*').css('display','none');
+    $('.open-chat').css('display','block');
+});
+</script>
+<div id="sticker-mobi">
+    <ul>
+        <li><a href=""><i class="fab fa-facebook-messenger"></i></a></li>
+        <li><a href=""><i class="fab fa-facebook-messenger"></i></a></li>
+        <li><a href=""><i class="material-icons">phone_in_talk</i></a></li>
+        <li><a href=""><i class="far fa-comment-dots"></i></a></li>
+        <li><a href=""><i class="fab fa-facebook-messenger"></i></a></li>
+    </ul>
+</div>
 <script src="OwlCarousel2-2.3.4/dist/owl.carousel.min.js" type="text/javascript"></script>
+</body>  
 
 </html>
 <!-- end -->

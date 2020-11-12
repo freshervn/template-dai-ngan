@@ -4,3 +4,6 @@ có cái bannẻ chưa reponive;
 tạm sửa mấy cái nút mobi;
 chỉnh lại hiệu ứng của navbar;
 mobi;
+
+chỉnh lại icon header -đã xong
+

@@ -248,12 +248,14 @@ nav.navbar-expand-lg.navbar-light.container .navbar-collapse .navbar-nav  .dropd
 	color: var(--color-theme-1);
 	font-weight: 700;
 }
+/*dropdown 2 cái hiện ra trong navbar khi hover*/
 nav.navbar-expand-lg.navbar-light.container .navbar-collapse .navbar-nav .nav-item.dropdown .dropdown-menu .continous-dropdown{
 	position: relative;
 }
 nav.navbar-expand-lg.navbar-light.container .navbar-collapse .navbar-nav .nav-item.dropdown .dropdown-menu .continous-dropdown .dropdown-item ~div{
 	display: none;
 }
+/*dropdown 2 hover*/
 nav.navbar-expand-lg.navbar-light.container .navbar-collapse .navbar-nav .nav-item.dropdown .dropdown-menu .continous-dropdown .dropdown-item:hover ~.dropdown-dropdown-item,
 nav.navbar-expand-lg.navbar-light.container .navbar-collapse .navbar-nav .nav-item.dropdown .dropdown-menu .continous-dropdown .dropdown-item ~ .dropdown-dropdown-item:hover{
 	position: absolute;
@@ -278,11 +280,13 @@ nav.navbar-expand-lg.navbar-light.container .navbar-collapse .navbar-nav .nav-it
 	text-decoration: none;
 	transition: 0.3s ease-in-out;
 }
+/*dorpdown3 hover*/
 nav.navbar-expand-lg.navbar-light.container .navbar-collapse .navbar-nav .nav-item.dropdown .dropdown-menu .continous-dropdown .dropdown-item ~ .dropdown-dropdown-item a:hover{
 	margin-left: 15px;
 	color: var(--color-theme-1);/*
 	text-shadow: 1px 1px 1px var(--color-theme-1), -1px -1px 1px var(--color-theme-1), 1px -1px 1px var(--color-theme-1), -1px 1px 1px var(--color-theme-1);*/
 }
+/*dropdown 3*/
 nav.navbar-expand-lg.navbar-light.container .navbar-collapse .navbar-nav .nav-item.dropdown .dropdown-menu .continous-dropdown .dropdown-item ~ .dropdown-dropdown-item .dropdown-3-item{
 	position: relative;
 	height: 0;
@@ -290,6 +294,7 @@ nav.navbar-expand-lg.navbar-light.container .navbar-collapse .navbar-nav .nav-it
 	overflow-x: hidden;
 	display: block;
 }
+/*dropdown hover*/
 nav.navbar-expand-lg.navbar-light.container .navbar-collapse .navbar-nav .nav-item.dropdown .dropdown-menu .continous-dropdown .dropdown-item ~ .dropdown-dropdown-item a:hover + .dropdown-3-item,
 nav.navbar-expand-lg.navbar-light.container .navbar-collapse .navbar-nav .nav-item.dropdown .dropdown-menu .continous-dropdown .dropdown-item ~ .dropdown-dropdown-item a + .dropdown-3-item:hover{
 	height: auto;

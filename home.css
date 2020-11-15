@@ -1,0 +1,121 @@
+.banner{
+	position: relative;
+}
+.banner .banner-background{
+	width: 100%;
+	position: relative;
+}
+.banner .content{
+	position: absolute;
+	bottom: 0px;
+	text-align: center;
+	left:50%;
+	transform: translate(-50%);
+	width: 80%;
+	background: var(--color-theme-1);
+	opacity: 0.85;
+	text-transform: uppercase;
+	padding: 0.5em 10em;
+}
+@media only screen and (max-width: 992px){
+	.banner .content{
+		position: relative;
+		top: 100%;
+		width: 100%;
+		opacity: 1;
+		padding: 15px;
+	}
+}
+@media only screen and (max-width: 768px){
+	.banner .content{
+		padding: 15px 15px;
+	}
+}
+.banner .content h1{
+	text-align: center;
+	width: 100%;
+	font-weight: 700;
+	font-size: 1.8rem
+	padding: 1em;
+	margin: 1em;
+	line-height: 1.6em;
+}
+@media only screen and (max-width: 992px){
+	.banner .content h1{
+		font-size: 20px;
+		padding: 15px;
+		margin: 0;
+	}
+}
+
+@media only screen and (max-width: 768px){
+	.banner .content h1{
+		font-size: 16px;
+	}
+}
+@media only screen and (max-width: 576px){
+	.banner .content h1{
+		font-size: 12px;
+		margin: 0 0 15 0;
+		padding: 0;
+	}
+}
+.banner .content button{
+	border: 2px solid;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: 700;
+	border-radius: 5px;
+	outline: none;
+	background: transparent;
+	color: white;
+	font-family: 'UTM', Helvetica, sans-serif;
+	transition: 0.3s ease-in-out;
+	line-height: 1.6em;
+	padding: 5px 15px;
+}
+
+@media only screen and (max-width: 768px){
+	.banner .content button{
+		font-size: 16px;
+	}
+}
+@media only screen and (max-width: 576px){
+	.banner .content button{
+		font-size: 12px;
+		padding: 0.1em 0.5em;
+	}
+}
+.banner .content button:hover{
+	transform: scale(1.2);
+	filter: brightness(120%);
+	background: white;
+	color: var(--color-theme-1);
+}
+body main article.banner-bottom{
+	background-image:linear-gradient(white,white) ,url('img/bannercontact.jpg');
+	background-size: 50% 100%,50% 100%;
+	background-position: 0%, 100%;
+	background-repeat: no-repeat;
+	padding: 6em 0;
+}
+@media only screen and (max-width: 768px){
+	body main article.banner-bottom{
+		background-image:linear-gradient(white,white);
+		background-size: 100% 100%;
+	background-position: 0%, 100%;
+	}	
+}
+body main article.banner-bottom h5{
+	color: black;
+	font-size: 15px;
+	font-weight: 700;
+}
+body main article.banner-bottom h4{
+	color:var(--color-theme-1);
+	font-size: 40px;
+	font-weight: 700;
+}
+body main article.banner-bottom p{
+	color: #333;
+}

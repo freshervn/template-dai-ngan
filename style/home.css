@@ -12,7 +12,7 @@
 	left:50%;
 	transform: translate(-50%);
 	width: 80%;
-	background: var(--color-theme-1);
+	background: var(--theme-color-1);
 	opacity: 0.85;
 	text-transform: uppercase;
 	padding: 0.5em 10em;
@@ -90,32 +90,22 @@
 	transform: scale(1.2);
 	filter: brightness(120%);
 	background: white;
-	color: var(--color-theme-1);
+	color: var(--theme-color-1);
 }
-body main article.banner-bottom{
-	background-image:linear-gradient(white,white) ,url('img/bannercontact.jpg');
-	background-size: 50% 100%,50% 100%;
-	background-position: 0%, 100%;
-	background-repeat: no-repeat;
-	padding: 6em 0;
-}
-@media only screen and (max-width: 768px){
-	body main article.banner-bottom{
-		background-image:linear-gradient(white,white);
-		background-size: 100% 100%;
-	background-position: 0%, 100%;
-	}	
-}
-body main article.banner-bottom h5{
-	color: black;
-	font-size: 15px;
-	font-weight: 700;
-}
-body main article.banner-bottom h4{
-	color:var(--color-theme-1);
-	font-size: 40px;
-	font-weight: 700;
-}
-body main article.banner-bottom p{
-	color: #333;
-}
+/*intro 2*/
+.intro-2 {
+		padding-top: 2em;
+	}
+	.intro-2 .container{
+		background: url("../img/background-intro.jpg");
+		background-size: cover;
+		padding: 6em 2em;
+		text-align: center;
+	}
+		.intro-2 .container h6{
+			font-weight: 700;
+		}
+		.intro-2 .container p{
+			padding-top: 1em;
+		}
+		/*banner bottom*/

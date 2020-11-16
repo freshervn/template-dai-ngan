@@ -927,7 +927,7 @@ footer .receive-messages form button:hover{
 		padding-top: 2em;
 	}
 	.intro-2 .container{
-		background-image: url('img/background-intro.jpg');
+		background-image: url('./img/background-intro.jpg');
 		background-size: cover;
 		padding: 6em 2em;
 		text-align: center;
@@ -1143,7 +1143,6 @@ body main article.banner-bottom p{
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
-	padding-top: 0.5em;
 }
 
 .link-list ul li{

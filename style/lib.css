@@ -869,13 +869,12 @@ footer .receive-messages form button:hover{
 		top: -15px;
 		font-weight: 700;
 		left: -15px;
-		color: white;
 		text-align: center;
 		width:50px;
 		height: 30px;
 		background: red;
 		clip-path: polygon(0 48%,15% 0%, 100% 0%, 100% 100%,15% 100%);
-		color: yellow;
+		color: white;
 		text-transform: uppercase;
 		line-height: 1.9em;
 		display: flex;
@@ -888,7 +887,7 @@ footer .receive-messages form button:hover{
 		right: -15px;
 		position: absolute;
 		display: block;
-		color: yellow;
+		color: white;
 		font-weight: 700;
 		width: 50px;
 		height: 50px;
@@ -1239,7 +1238,6 @@ body main article.banner-bottom p{
 		height: 30px;
 		background: red;
 		clip-path: polygon(0 48%,15% 0%, 100% 0%, 100% 100%,15% 100%);
-		color: yellow;
 		text-transform: uppercase;
 		line-height: 1.9em;
 		display: flex;
@@ -1252,7 +1250,7 @@ body main article.banner-bottom p{
 		right: -15px;
 		position: absolute;
 		display: block;
-		color: yellow;
+		color: white;
 		font-weight: 700;
 		width: 50px;
 		height: 50px;

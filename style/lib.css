@@ -906,6 +906,7 @@ footer .receive-messages form button:hover{
 		color: red;
 		padding-right: 10px;
 		text-transform: uppercase;
+		font-weight: 700;
 	}
 	.product section .owl-carousel .item h5{
 		color: black;
@@ -1268,6 +1269,7 @@ body main article.banner-bottom p{
 		color: red;
 		padding-right: 10px;
 		text-transform: uppercase;
+		font-weight: 700;
 	}
 	.list-product .item h5{
 		color: black;

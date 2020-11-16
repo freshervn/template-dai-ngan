@@ -1,1 +1,21 @@
-chi_tiet_san_pham.css
+/*product*/
+.product-details .img figure,.product-details .main-img figure{
+	width: 100%;
+	padding-top: 100%;
+	position: relative;
+	border: 1px solid #d5d5d5;
+}
+.product-details .img figure img,.product-details .main-img figure img{
+	width: 100%;
+	position: absolute;
+	top: 0%;
+	height: 100%;
+	padding: 10px;
+}
+.product-details .main-img figure button{
+	position: absolute;
+	top:50%;
+}
+.product-details .main-img figure button.next{
+	right: 0;
+}

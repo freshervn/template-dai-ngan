@@ -909,9 +909,11 @@ footer .receive-messages form button:hover{
 		text-transform: uppercase;
 		font-weight: 700;
 	}
+	/*ten san pham*/
 	.product section .owl-carousel .item h5{
 		color: black;
 		font-weight: 700;
+		font-size: 14px;
 	}
 	.product section .owl-carousel .item h5:first-letter{
 		text-transform: uppercase;
@@ -1208,6 +1210,7 @@ body main article.banner-bottom p{
 		padding:15px;
 		text-align: left; 
 		z-index: -4;
+		margin-top: 20px;
 	}
 		.list-product .item a{
 			text-decoration: none;
@@ -1277,6 +1280,7 @@ body main article.banner-bottom p{
 	.list-product .item h5{
 		color: black;
 		font-weight: 700;
+		font-size: 14px;
 	}
 	.list-product .item h5:first-letter{
 		text-transform: uppercase;

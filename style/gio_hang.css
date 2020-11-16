@@ -1,0 +1,131 @@
+.cart h4{
+	color: var(--theme-color-1);
+	font-family: 'UTM', Helvetica, sans-serif;
+	font-weight: 700;
+	position: relative;
+	margin-top: 1.5em;
+	text-transform: uppercase;
+	font-size: 25px;
+	margin-bottom: 1em;
+	text-align: center;
+}
+.cart h4::after{
+	content: '';
+	width: 68px;		
+	height: 3px;
+	background: var(--theme-color-1);
+	position: absolute;
+	top: 110%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.cart aside section{
+	border: 1px solid #d5d5d5;
+	padding-top: 15px;
+	padding-bottom: 0;
+	border-radius: 10px;
+}
+.cart aside .buying{
+	margin-top: 1em;
+}
+.cart aside .buying:first-child{
+	margin-top: 0;
+}
+.cart aside .buying figure{
+	position: relative;
+	width: 100%;
+	padding-top: 100%;
+	border: 1px solid #d5d5d5;
+}
+.cart aside .buying figure img{
+	width: 100%;
+	padding: 15px;
+	position: absolute;
+	top:0;
+	left: 0;
+}
+.cart aside .buying .information-product{
+	color: black;
+}
+.cart aside .buying .information-product p{
+	font-size: 16px;
+	margin-bottom: 0.2em;
+}
+.cart aside .buying .information-product h3{
+	font-size: 18px;
+	text-transform: uppercase;
+	color: var(--theme-color-1);
+}
+.cart aside .buying .information-product b{
+	margin-right: 0.5em;
+}
+.cart aside .price{
+	color: red;
+	font-weight: bold;
+}
+.cart aside .buying  .plush-minus {
+	display: flex;
+	justify-content: space-around;
+	padding-bottom: 15px;
+}
+.cart aside .buying  .plush-minus button{
+	border: 1px solid #d5d5d5;
+	outline: none;
+	margin: 0;
+	width: 25px;
+	height: 25px;
+}
+.cart aside .buying  .plush-minus button.minus{
+	border-bottom-left-radius: 5px;
+	border-top-left-radius: 5px;
+}
+.cart aside .buying  .plush-minus button.plush{
+	border-bottom-right-radius: 5px;
+	border-top-right-radius: 5px;
+}
+.cart aside .buying  .plush-minus span{
+	color: black;
+	border: 1px solid #d5d5d5;
+	margin: 0;
+	width: 25px;
+	height: 25px;
+	text-align: center;
+}
+@media only screen and (max-height: 576px;)
+{
+.cart .pay{
+	margin-top: 15px;
+}
+	
+}
+.cart .pay section{
+	color: black;
+	position: sticky;
+	top: 66px;
+	padding: 15px;
+}
+.cart .pay section p{
+	width: 100%;
+}
+.cart .pay section p:first-letter{
+text-transform: uppercase;
+}
+.cart .pay section span{
+	float: right;
+	font-weight: bold;
+}
+.cart .pay section form{
+	padding-top: 15px;
+}
+.cart .pay section button{
+	width: 100%;
+	margin-top: 15px;
+	border-radius: 5px;
+	outline: none;
+	background-color: var(--theme-color-1);
+	border: none;
+	color: white;
+	text-transform: uppercase;
+	font-weight: 700;
+	padding: 0.5em;
+}

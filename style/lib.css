@@ -682,6 +682,7 @@ footer .receive-messages form button:hover{
 	}
 	body main article{
 		padding-bottom: 1em;
+		padding-top: 1em;
 	}
 	body main article:nth-child(even){
 		background: whitesmoke;
@@ -1116,4 +1117,46 @@ body main article.banner-bottom h4{
 }
 body main article.banner-bottom p{
 	color: #333;
+}
+/*link list*/
+.link-list ul{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	padding-top: 0.5em;
+}
+
+.link-list ul li{
+	display: inline-block;
+}
+.link-list ul li:first-letter{
+	text-transform: uppercase;
+}
+.link-list ul li::after{
+	content: '>';
+	color: var(--text-color);
+}
+.link-list ul li:last-child::after{
+	content: '';
+}
+.link-list ul li a{
+	text-decoration: none;
+	color: var(--text-color);
+}
+.link-list ul li:hover a,.link-list ul li::after{
+	color: var(--theme-color-1);
+}
+/*sort-product*/
+.sort-product{
+	color: var(--text-color);
+	padding-top: 0.5em;
+}
+.sort-product form input[type='radio']{
+	outline: none;
+}.sort-product form input[type='radio']:focus + label {
+	color: var(--theme-color-1);
+	font-weight: bold;
+}
+.sort-product form input[type='radio'] + label:first-letter{
+	text-transform: uppercase;
 }

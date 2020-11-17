@@ -715,7 +715,7 @@ footer .receive-messages form button:hover{
 	}
 	.product  section >p{
 		font-size: 16px;
-		padding-top: 2em;
+		padding-top: 0.5em;
 	}
 	.product  section > h4{
 		color: var(--theme-color-1);

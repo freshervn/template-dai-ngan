@@ -1,0 +1,254 @@
+/*product*/
+/*img*/
+.product-details .img  {
+	display: flex;
+	height: fit-content;
+	flex-direction: column;
+}
+
+.product-details .img.img-1{
+	display: flex;
+}
+.product-details .img.img-2{
+	display: none;
+}
+.product-details .img.img-3{
+	display: none;
+}
+@media only screen and (max-width: 992px){
+	.product-details .img.img-1{
+		display: none;
+	}
+	.product-details .img.img-2{
+		display: none;
+	}
+	.product-details .img.img-3{
+		display: flex;
+	}
+}
+
+@media only screen and (max-width: 768px){
+	.product-details .img.img-1{
+		display: none;
+	}
+	.product-details .img.img-2{
+		display: flex;
+	}
+	.product-details .img.img-3{
+		display: none;
+	}
+}
+@media only screen and (max-width: 992px){
+	.product-details .img {
+		flex-direction: row;
+	}
+}
+.product-details .img div{
+	margin-bottom: 15px; 
+}
+@media only screen and (max-width: 992px){
+	.product-details .img {
+		margin-bottom: 1em;
+	}
+}
+.product-details .img figure,.product-details .main-img figure{
+	width: 100%;
+	padding-top: 100%;
+	position: relative;
+	border: 1px solid #d5d5d5;
+	margin: 0;
+}
+.product-details .img figure img,.product-details .main-img figure img{
+	width: calc( 100% );
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	padding: 10px;
+}
+/*main-img*/
+.product-details .main-img figure button{
+	position: absolute;
+	top:50%;
+}
+.product-details .main-img figure button.next{
+	right: 0;
+}
+/*detai*/
+.product-details .detail{
+	color: black;
+}
+.product-details .detail h3{
+	color: var(--theme-color-1);
+	text-transform: uppercase;
+}
+.product-details .detail p.description{
+	background: var(--note-color);
+	padding: 0.5em;
+	border: 1px solid #d5d5d5;
+}
+.product-details .detail p.description:first-letter{
+	text-transform: uppercase;
+}
+.product-details .detail ul li:first-letter{
+	text-transform: uppercase;
+}
+.product-details .detail ul li {
+}
+.product-details .detail ul li span{
+	font-weight: 1000;	
+}
+.product-details .detail ul li span::before{
+	margin-right: 0.5em;
+}
+.product-details .detail h6 span{
+	font-weight: bold;
+	color: var(--theme-color-1);
+	font-size: 20px;
+}
+.product-details .detail button{
+	width: 100%;
+	border-radius: 10px;
+	padding: 0.5em;
+	background-image: linear-gradient(180deg,#fd6e1d,#f59000);
+	border: none;
+	outline: none;
+	cursor: pointer;
+	color: white;
+	position: relative;
+	overflow: hidden;
+}
+.product-details .detail button h6{
+	text-transform: uppercase;
+	margin:0;
+}
+.product-details .detail button::before {
+	position: absolute;
+	top: 0;
+	left: -75%;
+	z-index: 2;
+	display: block;
+	content: '';
+	width: 50%;
+	height: 100%;
+	background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+	background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+	-webkit-transform: skewX(-25deg);
+	transform: skewX(-25deg);
+}
+.product-details .detail button:hover::before {
+	-webkit-animation: shine .75s;
+	animation: shine .75s;
+}
+/*call-phone-number*/
+.call-phone-number .container{
+	border: 1px solid var(--theme-color-1);
+}
+.call-phone-number .container aside h6{
+	color: var(--theme-color-1);
+}
+.call-phone-number .container aside ul{
+	list-style-type: none;
+	padding: 0;
+
+}
+.call-phone-number .container aside li{
+	font-weight: 1000;
+	color: black;
+}
+.call-phone-number .container aside li span{
+	float: right;
+	color: var(--theme-color-1);
+	font-size: 20px;
+}
+/*product-details-2*/
+.product-details-2{
+	color: black;
+}
+.product-details-2 h4{
+	text-transform: uppercase;
+	color: var(--theme-color-1);
+	font-weight: 700px;
+}
+.about .menu ul{
+	list-style-type: none;
+	padding: 0;
+	position: relative;
+	width: 100%;
+}
+.about .menu ul li{
+	padding-left:  1em;
+	line-height: 2.6em;
+	width: 100%;
+}
+.about .menu ul li:first-child{
+	background-color: var(--theme-color-2);
+	color: white;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.about .menu ul li:first-child a{
+	color: white;
+}
+.about .menu ul li:first-child a:hover{
+	color: white;
+	margin:0;
+}
+.about .menu ul li{
+	border: 1px solid #d5d5d5;
+	position: relative;
+}	
+.about .menu ul li a{
+	color: black;
+	font-weight: 700;
+	text-decoration: none;
+	transition: 0.3s ease-in-out;
+}
+.about .menu ul li a:hover{
+	margin-left: 10px;
+	color: var(--theme-color-2);
+}
+.about .menu ul li a img{
+	margin-right: 0.5em;
+}
+/*<img src="img/arrow_left.gif"> */
+/*chua lam xong*/
+/*.about .menu ul::before {
+	content: url(img/arrow_left.gif);
+}*/
+.about .content{
+	color: black;
+}
+.about .content {
+	font-size: 18px;
+}
+.about .content .title{
+	color: var(--theme-color-1);
+	text-transform: uppercase;
+	font-size: 25px;
+	position: relative;
+	font-weight: 700;
+}
+.about .content .title::before{
+	content: "";
+	width: 80px;
+	height: 2px;
+	position: absolute;
+	top:100%;
+	background-color: var(--theme-color-1);
+}
+.about .content  figure{
+	text-align: center;
+}
+.about .content  figure img{
+	max-width: 100%;
+}
+.about .content .center-red{
+	color: var(--theme-color-1);
+	text-align: center;
+}
+.about .content .center-black{
+	color: black;
+	text-align: center;	
+	font-weight: 700;
+}

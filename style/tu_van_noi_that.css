@@ -1,0 +1,126 @@
+.about .menu ul{
+	list-style-type: none;
+	padding: 0;
+	position: relative;
+	width: 100%;
+}
+.about .menu ul li{
+	padding-left:  1em;
+	line-height: 2.6em;
+	width: 100%;
+}
+.about .menu ul li:first-child{
+	background-color: var(--theme-color-2);
+	color: white;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.about .menu ul li:first-child a{
+	color: white;
+}
+.about .menu ul li:first-child a:hover{
+	color: white;
+	margin:0;
+}
+.about .menu ul li{
+	border: 1px solid #d5d5d5;
+	position: relative;
+	width: 100%;
+}	
+.about .menu ul li a{
+	color: black;
+	font-weight: 700;
+	text-decoration: none;
+	transition: 0.3s ease-in-out;
+}
+.about .menu ul li:hover >a{
+	padding-left: 10px;
+	color: var(--theme-color-2);
+}
+.about .menu ul li a img{
+	margin-right: 0.5em;
+}
+.about .menu ul li .btn-group.dropdown{
+	width: 100% !important;
+	padding: 0;
+	margin: 0;
+	position: relative;
+}
+.about .menu ul li .btn-group.dropdown button.btn {
+	width: 100%;
+	background:transparent;
+	border: none;
+	padding: 0;
+	margin: 0;
+	color: black;
+	outline: none;
+	box-shadow: none;
+}
+.about .menu ul li .btn-group.dropdown button:first-child{
+	flex: 1;
+	color: red;
+	text-align: left;
+	transition: 0.3s ease-in-out;
+}
+.about .menu ul li .btn-group.dropdown button:first-child:hover{
+	padding-left: 10px;
+}
+.about .menu ul li .btn-group.dropdown button.btn.dropdown-toggle{
+	width: 50px;
+	text-align: right;
+	padding-right: 15px;
+}
+.about .menu ul li .btn-group.dropdown .dropdown-menu{
+	position: relative;
+}
+.about .menu ul li:hover .btn-group.dropdown button,.about .menu ul li:hover .btn-group.dropdown button >a{
+	color: var(--theme-color-1);
+}
+.about .menu ul li .btn-group.dropdown .dropdown-menu a{
+	background: transparent;
+}
+.about .menu ul li .btn-group.dropdown .dropdown-menu a:hover{
+	color: var(--theme-color-1);
+	background:#d5d5d5;
+}
+/*<img src="img/arrow_left.gif"> */
+/*chua lam xong*/
+/*.about .menu ul::before {
+	content: url(img/arrow_left.gif);
+	}*/
+	.about .content{
+		color: black;
+	}
+	.about .content {
+		font-size: 18px;
+	}
+	.about .content .title{
+		color: var(--theme-color-1);
+		text-transform: uppercase;
+		font-size: 25px;
+		position: relative;
+		font-weight: 700;
+	}
+	.about .content .title::before{
+		content: "";
+		width: 80px;
+		height: 2px;
+		position: absolute;
+		top:100%;
+		background-color: var(--theme-color-1);
+	}
+	.about .content  figure{
+		text-align: center;
+	}
+	.about .content  figure img{
+		max-width: 100%;
+	}
+	.about .content .center-red{
+		color: var(--theme-color-1);
+		text-align: center;
+	}
+	.about .content .center-black{
+		color: black;
+		text-align: center;	
+		font-weight: 700;
+	}

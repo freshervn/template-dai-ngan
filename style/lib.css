@@ -263,6 +263,7 @@ header .logo-cart .right input[type="search"]:focus{
 	position:sticky;
 	top: 0;	
 	z-index:99;
+	max-height: 60px;
 }
 nav{
 }

@@ -263,8 +263,6 @@ header .logo-cart .right input[type="search"]:focus{
 	position:sticky;
 	top: 0;	
 	z-index:99;
-	max-height: 60px;
-	background:blue;
 }
 nav{
 }
@@ -288,9 +286,6 @@ nav.navbar-expand-lg.navbar-light.container .navbar-collapse .navbar-nav .nav-li
 }
 nav.navbar-expand-lg.navbar-light.container .navbar-collapse .navbar-nav .dropdown-toggle::after{
 	display: none;
-}
-nav.navbar-expand-lg.navbar-light.container .navbar-collapse .navbar-nav .dropdown-toggle{
-	max-height: 60px;
 }
 /*box drowdown*/
 nav.navbar-expand-lg.navbar-light.container .navbar-collapse .navbar-nav  .dropdown-menu{
@@ -403,9 +398,7 @@ nav > button {
 	border: none;
 	cursor: pointer;
 	position: relative;
-	height: 100%;
 }
-
 nav > button i {
 	font-size: 40px;
 	color: white;

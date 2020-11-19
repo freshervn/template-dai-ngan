@@ -398,7 +398,9 @@ nav > button {
 	border: none;
 	cursor: pointer;
 	position: relative;
+	height: 40px;
 }
+
 nav > button i {
 	font-size: 40px;
 	color: white;

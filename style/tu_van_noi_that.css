@@ -26,63 +26,49 @@
 	border: 1px solid #d5d5d5;
 	position: relative;
 	width: 100%;
+	color: black;
 }	
 .about .menu ul li a{
 	color: black;
 	font-weight: 700;
 	text-decoration: none;
-	transition: 0.3s ease-in-out;
 }
-.about .menu ul li:hover >a{
+.about .menu ul li:hover > a{
 	padding-left: 10px;
 	color: var(--theme-color-2);
+	transition: 0.3s ease-in-out;
 }
 .about .menu ul li a img{
 	margin-right: 0.5em;
 }
-.about .menu ul li .btn-group.dropdown{
-	width: 100% !important;
-	padding: 0;
-	margin: 0;
-	position: relative;
-}
-.about .menu ul li .btn-group.dropdown button.btn {
-	width: 100%;
-	background:transparent;
-	border: none;
-	padding: 0;
-	margin: 0;
-	color: black;
-	outline: none;
-	box-shadow: none;
-}
-.about .menu ul li .btn-group.dropdown button:first-child{
-	flex: 1;
-	color: red;
-	text-align: left;
+/*neu la details*/
+.about .menu ul li:hover details summary,.about .menu ul li:hover details summary a{
+	padding-left: 10px;
+	color: var(--theme-color-2);
 	transition: 0.3s ease-in-out;
 }
-.about .menu ul li .btn-group.dropdown button:first-child:hover{
-	padding-left: 10px;
+.about .menu ul li details ::-webkit-details-marker {
+	display: none;
 }
-.about .menu ul li .btn-group.dropdown button.btn.dropdown-toggle{
-	width: 50px;
-	text-align: right;
-	padding-right: 15px;
+.about .menu ul li details summary{
+	display: flex;
+	justify-content: space-between;
+	outline: none;
+}	
+.about .menu ul li details summary span{
+	display: flex;
+	justify-content: space-between;
+	outline: none;
+	margin-right: 15px;
+	font-weight: bold;
+}	
+.about .menu ul li details address a {
+	display: inline-block;
 }
-.about .menu ul li .btn-group.dropdown .dropdown-menu{
-	position: relative;
+.about .menu ul li details a{
+	transition: 0s;
 }
-.about .menu ul li:hover .btn-group.dropdown button,.about .menu ul li:hover .btn-group.dropdown button >a{
-	color: var(--theme-color-1);
-}
-.about .menu ul li .btn-group.dropdown .dropdown-menu a{
-	background: transparent;
-}
-.about .menu ul li .btn-group.dropdown .dropdown-menu a:hover{
-	color: var(--theme-color-1);
-	background:#d5d5d5;
-}
+
 /*<img src="img/arrow_left.gif"> */
 /*chua lam xong*/
 /*.about .menu ul::before {
@@ -107,20 +93,87 @@
 		height: 2px;
 		position: absolute;
 		top:100%;
-		background-color: var(--theme-color-1);
+		background-color:var(--theme-color-1);;
 	}
-	.about .content  figure{
-		text-align: center;
-	}
-	.about .content  figure img{
-		max-width: 100%;
-	}
-	.about .content .center-red{
-		color: var(--theme-color-1);
-		text-align: center;
-	}
-	.about .content .center-black{
+/*.about .content  figure{
+	text-align: center;
+}
+.about .content  figure img{
+	max-width: 100%;
+}
+.about .content .center-red{
+	color: #d5d5d5;
+	text-align: center;
+}
+.about .content .center-black{
+	color: black;
+	text-align: center;	
+	font-weight: 700;
+	}*/
+	.about .content .project {
+		margin: 5px;
+		border: 1px solid #d5d5d5;
+		text-align: left; 
 		color: black;
-		text-align: center;	
+	}
+	.about .content .project a{
+		text-decoration: none;
+	}
+	.about .content .project:hover{
+		box-shadow: 1px 1px 1px 1px #d5d5d5,-1px -1px 1px 1px #d5d5d5,1px -1px 1px 1px #d5d5d5,-1px 1px 1px 1px #d5d5d5;
+	}
+	.about .content .project figure{
+		width: 100%;
+		padding: 0;
+		padding-top: 61.8%;
+		position: relative;
+	}
+	.about .content .project figure img{
+		width: 90%;
+		height: 90%;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transition: 0.3s ease-in-out;
+		transform: translate(-50%,-50%);
+	}
+	.about .content .project:hover figure img{
+		width: 100%;
+		height: 100%;
+	}
+
+	.about .content .project .content{
+		padding: 10px;
+	}
+	.about .content .project .content h6{
+		color: black;
 		font-weight: 700;
+		font-size: 14px;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		display: -webkit-box;
+		-webkit-line-clamp:2;
+		-webkit-box-orient:vertical;	
+		min-height: 2.5em;	
+		font-size: 14px
+	}
+	.about .content .project:hover .content h6{
+		color: var(--theme-color-1);
+	}
+	.about .content .project .content p:first-letter{
+		text-transform: uppercase;
+	}
+	.about .content .project .content p{
+		color: black;
+		font-weight: 400;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		display: -webkit-box;
+		-webkit-line-clamp:3;
+		-webkit-box-orient:vertical;	
+		min-height: 3em;	
+		font-size: 14px
+	}
+	.about .content .project:hover .content *{
+		font-weight: bold;
 	}

@@ -706,19 +706,19 @@ footer .receive-messages form button:hover{
 		padding-top: 30px;		
 		font-family: 'UTM', Helvetica, sans-serif;
 	}
-	.product  section > h2,.product  section >p{
+	.product  section > .title1,.product  section > p{
 		color: black;
 	}
-	.product  section > h2{
+	.product  section > .title1{
 		font-size: 16px ;
 		font-weight: 700;
 		text-transform: uppercase;
 	}
-	.product  section >p{
+	.product  section > p{
 		font-size: 16px;
 		padding-top: 0.5em;
 	}
-	.product  section > h4{
+	.product  section > .title2 {
 		color: var(--theme-color-1);
 		font-family: 'UTM', Helvetica, sans-serif;
 		font-weight: 700;
@@ -728,7 +728,7 @@ footer .receive-messages form button:hover{
 		font-size: 25px;
 			margin-bottom: 1em;
 	}
-	.product  section > h4::after{
+	.product  section > .title2::after{
 		content: '';
 		width: 68px;		
 		height: 3px;
@@ -911,18 +911,20 @@ footer .receive-messages form button:hover{
 		font-weight: 700;
 	}
 	/*ten san pham*/
-	.product section .owl-carousel .item h5{
+	.product section .owl-carousel .item h3{
 		color: black;
 		font-weight: 700;
 		font-size: 14px;
 	}
-	.product section .owl-carousel .item h5:first-letter{
+	.product section .owl-carousel .item 3:first-letter{
 		text-transform: uppercase;
 	}
-	.product section .owl-carousel .item h6{
+	/*gia*/
+	.product section .owl-carousel .item b{
 		color: red;
 		font-weight: 700;
 	}
+	
 	/*banner gan footer*/
 	.intro-2 {
 		padding-top: 2em;

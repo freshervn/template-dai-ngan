@@ -1,0 +1,45 @@
+/*#sticker-mobi #phone-call {
+	background-color: var(--theme-color-1);
+	border-radius: 50%;
+	width: 40px;
+	padding: ;
+}
+*/#sticker-mobi #phone-call{
+	
+}
+#sticker-mobi #phone-call a{
+	background-color: var(--theme-color-1);
+	border-radius: 50%;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 50px;
+	height: 50px;
+	bottom: 10%;
+}
+#sticker-mobi #phone-call a img{
+	background-image: url('./img/icon-mobile-phone.svg'); 
+	filter: invert(1);
+	width: 30px;
+	margin: 10px;
+	animation: phone-icon 500ms infinite;
+	box-shadow: 
+}
+@keyframes bigshake{
+	from {transform: scale(1);}
+	to {transform: scale(1.2);}
+}
+#sticker-mobi #phone-call a::after{
+	content: '';
+	width: 100%;
+	height: 100%;
+	background: transparent;
+	position: absolute;
+	left: 0;
+	border-radius: 50%;
+	box-shadow: 1px 1px 1px 1px var(--theme-color-1),1px -1px 1px 1px var(--theme-color-1),-1px -1px 1px 1px var(--theme-color-1),-1px -1px 1px 1px var(--theme-color-1);	
+	animation-name: bigshake;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	border:1px solid white;
+}

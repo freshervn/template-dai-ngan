@@ -657,13 +657,15 @@ footer .receive-messages form button:hover{
 		position: fixed;
 		background: #d5d5d5;
 		width: 100%;
-		height: 30px;
+		height: 55px;
 		bottom: 0;
 		display: flex;
 		justify-content: space-around;
 		overflow: visible;
 		display: none;
 		z-index: 99;
+		border-top-right-radius: 5px;
+		border-top-left-radius: 5px;
 	}
 	@media only screen and (max-width: 768px){
 		#sticker-mobi{
@@ -678,7 +680,7 @@ footer .receive-messages form button:hover{
 		display: flex;
 		justify-content: space-between;
 		position: absolute;
-		bottom: 30%;
+		bottom: 10px;
 	}
 	#sticker-mobi ul li{
 		display: inline-block;

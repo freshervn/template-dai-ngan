@@ -15,11 +15,16 @@
 	padding-left:  0;
 	width: 100%;
 }
-
 .banner-product  .list-category  ul li{
 	display: inline-block;
 	margin-right: 1.5em;
 }
+.banner-product  .list-category  ul li h2{
+	font-size: 18px;
+	}
+	.banner-product  .list-category  ul li h2:first-letter{
+		text-transform: uppercase;
+	}
 .banner-product .list-category  ul li a{
 	color: white;
 	font-weight: bold;	
@@ -44,10 +49,10 @@ background:var(--theme-color-2);
 		display: none;
 	}
 }
-.banner-product .name-category h3{
+.banner-product .name-category h1{
 	text-transform: uppercase;
 	font-weight: bold;
-	font-size: 
+	font-size: 32px;
 }
 		/*intro-product*/
 	.intro-product{

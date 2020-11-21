@@ -78,7 +78,7 @@
 .product-details .detail{
 	color: black;
 }
-.product-details .detail h3{
+.product-details .detail h1{
 	color: var(--theme-color-1);
 	text-transform: uppercase;
 }
@@ -102,7 +102,7 @@
 	content: ":";
 	margin-right: 0.5em;
 }
-.product-details .detail h6 span{
+.product-details .detail p span{
 	font-weight: bold;
 	color: var(--theme-color-1);
 	font-size: 20px;

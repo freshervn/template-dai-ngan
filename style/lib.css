@@ -655,9 +655,9 @@ footer .receive-messages form button:hover{
 	/*sticker mobi*/
 	#sticker-mobi{
 		position: fixed;
-		background: var(--theme-color-1);
+		background: #d5d5d5;
 		width: 100%;
-		height: 20px;
+		height: 30px;
 		bottom: 0;
 		display: flex;
 		justify-content: space-around;

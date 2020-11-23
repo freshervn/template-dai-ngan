@@ -19,7 +19,9 @@
 		left: 125%;
 	}
 }
-
+*:first-letter{
+	text-transform: uppercase;
+}
 * {box-sizing: border-box;}
 .mobi{
 	display: none;

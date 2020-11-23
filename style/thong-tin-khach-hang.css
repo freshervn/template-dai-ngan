@@ -1,5 +1,5 @@
 article {
-		border: 3px solid var(--theme-color-1);
+	border: 3px solid var(--theme-color-1);
 	border-radius: 10px;
 	margin-top: 2em;
 }
@@ -15,7 +15,75 @@ main header img {
 .name-company{
 	font-weight: bold;
 }
-main .timeline col-6{
+main .timeline{
+	
+}
+main .timeline .row:first-child{
+	color: black;
+	justify-content: space-between;
+	width: 85%;
+	margin: auto;	
+	font-weight: 500;
+}
+main .timeline .row:last-child{
+	width: 80%;
+	margin: auto;
+}
+main .timeline .col-6{
 	height: 8px;
-	color: 
+	border: 1px solid #00b6f0;
+}
+main .timeline .col-6.active{
+	background-color: #00b6f0;
+}
+main .timeline  .cart::before{
+	content: '1';
+	width: 26px;
+	height: 26px;
+	font-size: 20px;
+	border-radius: 50%;
+	background-color: #00b6f0;
+	position: absolute;
+	left: 0%;
+	top: 0;
+	transform: translateX(-50%) translateY(-50%);
+	z-index: 1;
+	text-align: center;
+	padding: 0px 1px 0px 0px;
+	line-height: 1.2em;
+	text-align: center;
+}
+main .timeline  .info::before{
+	content: '2';
+	width: 26px;
+	height: 26px;
+	font-size: 20px;
+	border-radius: 50%;
+	background-color: #00b6f0;
+	position: absolute;
+	left: 0%;
+	top: 0;
+	transform: translateX(-50%) translateY(-50%);
+	z-index: 1;
+	text-align: center;
+	padding: 0px 1px 0px 0px;
+	line-height: 1.2em;
+	text-align: center;
+}
+main .timeline  .info::after{
+	content: '3';
+	width: 26px;
+	height: 26px;
+	font-size: 20px;
+	border-radius: 50%;
+	background-color: #00b6f0;
+	position: absolute;
+	right: 0%;
+	top: 0;
+	transform: translateX(50%) translateY(-50%);
+	z-index: 1;
+	text-align: center;
+	padding: 0px 1px 0px 0px;
+	line-height: 1.2em;
+	text-align: center;
 }

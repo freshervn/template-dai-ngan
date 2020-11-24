@@ -59,7 +59,7 @@
           <p>Điện thoại: 024 33676688 -0982299076 - Fax: 024 32272401</p>
         </aside>
         <aside>      
-          <a href=""><img src="img/logo_blank.png"></a>
+          <a href="index.html"><img src="img/logo_blank.png"></a>
           <p>ngày <span class="date"></span> tháng <span class="month"></span> năm <span class="year"></span></p>
         </aside>
       </header>
@@ -75,16 +75,16 @@
         </div>        
       </section> 
       <section class="container">
-        <form>
-          <label for="name-client">Họ và tên:</label>
-          <input type="text" name="name-client" placeholder="Họ và tên">
-          <label for="phone-nummber">Điện thoại(10 số viết liền vd):</label>
-          <input type="tel" name="phone-nummber" pattern="[0-9]{10}" required placeholder="Số điện thoại">
-          <label for="email">Email</label>
-          <input type="email" name="email" placeholder="Email">
-          <p>Thông tin giao hàng</p>
-          <label for="drlTinhThanh">Tỉnh thành:</label>                         
-          <select name="drlTinhThanh">
+        <form class="row">
+          <label class="col-6" for="name-client">Họ và tên:</label>
+          <input class="col-12 col-md-6 " type="text" name="name-client" placeholder="Họ và tên">
+          <label class="col-6" for="phone-nummber">Điện thoại(10 số viết liền vd):</label>
+          <input class="col-12 col-md-6 "" type="tel" name="phone-nummber" pattern="[0-9]{10}" required placeholder="Số điện thoại">
+          <label class="col-6" for="email">Email</label>
+          <input class="col-12 col-md-6 " type="email" name="email" placeholder="Email">
+          <p class="col-12" >Thông tin giao hàng</p>
+          <label class="col-6" for="drlTinhThanh">Tỉnh thành:</label>                         
+          <select class="col-12 col-md-6 " name="drlTinhThanh">
             <option value="0">- Chọn tỉnh thành -</option>
             <option value="1">Thành phố Hà Nội</option>
             <option value="2">Hà Giang</option>
@@ -152,8 +152,8 @@
 
           </select>
 
-          <label for="drlQuanHuyen">Chọn quận huyện</label>
-          <select name="drlQuanHuyen">
+          <label class="col-6" for="drlQuanHuyen">Chọn quận huyện</label>
+          <select class="col-12 col-md-6 " name="drlQuanHuyen">
             <option value="0">- Chọn quận huyện -</option>
             <option value="89">Thành phố Lai Châu</option>
             <option value="90">Huyện Tam Đường</option>
@@ -165,28 +165,34 @@
             <option value="96">Huyện Nậm Nhùn</option>
           </select>
 
-          <label for="drlPhuongXa">Chọn phường xã</label>
-          <select name="drlPhuongXa">
+          <label class="col-6" for="drlPhuongXa">Chọn phường xã</label>
+          <select class="col-12 col-md-6 " name="drlPhuongXa">
             <option value="0">- Chọn phường xã -</option>
           </select>
-          <label for="address">Địa chỉ</label>
-          <input type="text" name="address" placeholder="Địa chỉ">
+          <label class="col-6" for="address">Địa chỉ</label>
+          <input class="col-12 col-md-6 " type="text" name="address" placeholder="Địa chỉ">
           <p>phương thức thanh toán</p>
+          <div class="col-12" >            
           <label for="cash"> Tiền mặt</label>
           <input type="radio" name="paymenthod" value="cash">
-          <label for="transfer">chuyển khoản</label>
-          <input type="radio" name="paymenthod" value="transfer">
-          <label for="bill">Thông tin xuất hoá đơn</label>
-          <input type="checkbox" name="bill" placeholder="Thông tin xuất hoá đơn">
-          <div id="bill" style="display: none">
-            <label for="name-company">Công ty:</label>
-            <input type="text" name="name-company" placeholder="Tên công ty">
-            <label for="Tax-code">mã số thuế</label>
-            <input type="number" name="Tax-code" placeholder="Mã số thuế">
-            <label for="address-bill">Địa chỉ hóa đơn:</label>
-            <input type="text" name="address-bill" placeholder="Địa chỉ hóa đơn:">
           </div>
-          <input type="submit" name="send" value="Đặt hàng">
+          <div class="col-12">            
+          <label for="transfer">chuyển khoản</label>
+          <input  type="radio" name="paymenthod" value="transfer">
+          </div>
+          <div class="col-12">            
+          <p >Thông tin xuất hoá đơn</p>
+          <input type="checkbox" name="bill" placeholder="Thông tin xuất hoá đơn">
+          </div>
+          <div id="bill">
+            <label class="col-12 col-md-6 " for="name-company">Công ty:</label>
+            <input class="col-12 col-md-6 " type="text" name="name-company" placeholder="Tên công ty">
+            <label class="col-12 col-md-6 " for="Tax-code">mã số thuế</label>
+            <input class="col-12 col-md-6 " type="number" name="Tax-code" placeholder="Mã số thuế">
+            <label class="col-12 col-md-6 " for="address-bill">Địa chỉ hóa đơn:</label>
+            <input class="col-12 col-md-6 " type="text" name="address-bill" placeholder="Địa chỉ hóa đơn:">
+          </div>
+          <input class="col-6" type="submit" name="send" value="Đặt hàng">
         </form>        
       </section>
     </article>

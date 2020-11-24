@@ -3,6 +3,11 @@ article {
 	border-radius: 10px;
 	margin-top: 2em;
 }
+@media only screen and (max-width: 568px){
+	article {
+	border: none;
+}
+}
 main header {
 	background: white;
 	color: black;
@@ -53,7 +58,7 @@ main .timeline  .cart::before{
 	line-height: 1.2em;
 	text-align: center;
 }
-main .timeline  .info::before{
+main .timeline .info::before{
 	content: '2';
 	width: 26px;
 	height: 26px;
@@ -70,7 +75,7 @@ main .timeline  .info::before{
 	line-height: 1.2em;
 	text-align: center;
 }
-main .timeline  .info::after{
+main .timeline .info::after{
 	content: '3';
 	width: 26px;
 	height: 26px;
@@ -86,4 +91,44 @@ main .timeline  .info::after{
 	padding: 0px 1px 0px 0px;
 	line-height: 1.2em;
 	text-align: center;
+}
+main  article section form{
+	margin-top: 1em;
+}
+main  article section form *{
+	margin-top: 5px;
+}
+main  article section form input::placeholder{
+	opacity: 0;
+}
+main  article section form label,main  article section form p{
+	color: black;
+	display: inline-block;
+}
+@media only screen and (max-width: 568px){
+	main  article section form input::placeholder{
+		opacity: 1;
+	}
+	main  article section form label{
+		display: none;
+	}
+}
+main  article section form p{
+	padding-left: 15px;
+	font-weight: 500;
+}
+main  article section form input[type='submit']{
+	margin-left: 25%;
+	font-weight: 700;
+	padding: 10px;
+	background-color: var(--theme-color-1);
+	color: white;
+	border: none;
+	border-radius: 10px;
+	text-transform: uppercase;
+}
+#bill{
+	display: none;
+	width: 100%;
+	flex-wrap: wrap;
 }

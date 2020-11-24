@@ -51,6 +51,10 @@
 	font-size: 16px;
 	margin-bottom: 0.2em;
 }
+.cart aside .buying .information-product p:last-child{
+	color: red;
+	font-weight: bold;
+}
 .cart aside .buying .information-product h3{
 	font-size: 18px;
 	text-transform: uppercase;
@@ -83,14 +87,21 @@
 	border-bottom-right-radius: 5px;
 	border-top-right-radius: 5px;
 }
-.cart aside .buying  .plush-minus span{
+.cart aside .buying  .plush-minus input[type='number']{
 	color: black;
 	border: 1px solid #d5d5d5;
 	margin: 0;
-	width: 25px;
+	width: 50px;
 	height: 25px;
 	text-align: center;
+	outline: none;
 }
+.cart aside .buying  .plush-minus input[type='number']::-webkit-outer-spin-button,
+.cart aside .buying  .plush-minus input[type='number']::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 @media only screen and (max-height: 576px;)
 {
 .cart .pay{
@@ -116,7 +127,7 @@ text-transform: uppercase;
 .cart .pay section form{
 	padding-top: 15px;
 }
-.cart .pay section button{
+.cart .pay section input[type='submit']{
 	width: 100%;
 	margin-top: 15px;
 	border-radius: 5px;

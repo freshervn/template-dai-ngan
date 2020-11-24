@@ -1,3 +1,4 @@
+	// an nut thif tang gia tri cua input
 	$(" button.plush ").click(
 		function() {
 			var $button = $(this);
@@ -15,19 +16,52 @@
 		$button.parent().find("input").val(newVal);
 	}
 	);
-	function stringtoint(string){
-		let a=0
-		alert(parseInt(string[0]));
-		for (var i = string.length - 1; i >= 0; i--) {
-			if (parseInt(string[i]) != NaN) {}
-			a=a+parseInt(string[i])*Math.pow(10,string.length-1-i);
+
+// chuyen gia xx.xxx.xxx thanh xxxxxxxx
+
+function stringtoint(stringpriece){
+	let a=stringpriece
+	for (var i = a.length - 1; i >= 0; i--) {
+		if (isNaN(a[i])) {		
+			a = a.replace(a[i], "");
 		}
-		return a;
 	}
-	alert(stringtoint('10.99'));
-	// var s=0;
-	// var l=document.getElementsByClassName('price');
-	// for (var i = l.length - 1; i >= 0; i--) {
-	// 	s=s+parseFloat(l[i].textContent);
+	return a;
+}
+
+function updatepriece(){	
+	var s=0;
+	var lprice=document.getElementsByClassName('price');
+	for (var i = lprice.length - 1; i >= 0; i--) {
+		let amount=lprice[i].parentElement.parentElement.parentElement;
+		$(amount).find('input').val();
+		s=s+parseInt(stringtoint(lprice[i].textContent)) * $(amount).find('input').val();
+	}
+	$('#total span').html(s);	
+	$('#total-tax span').html(s*90/100);	
+}
+
+	// function deleteproduct(){
+	// 	if (this.val()==NULL) {			
+	// 	this.remove();
+	// 	}
 	// }
-	// alert(s);
+	$(document).ready(updatepriece);
+	$(document).keydown(updatepriece);
+	$(document).click(updatepriece);
+
+	$('.minus').click(
+		function(){
+			if ($(this).parent().find('input').val()==0) {
+				$(this).parent().parent().parent().remove();
+			};
+		});
+
+// function  findchildnote(pr){
+// 	for (var i = pr.childNodes.length - 1; i >= 0; i--) {
+// 		if (pr.childNodes[i].nodeName.=='H3') {			
+// 			console.log(pr.childNodes[i].nodeName);
+// 		}
+// 	}
+// }
+// findchildnote(amount);

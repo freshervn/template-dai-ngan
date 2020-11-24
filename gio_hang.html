@@ -265,7 +265,7 @@
            <div  class="col-lg-2 plush-minus">
              <div class="row">
                <button class="minus">-</button>
-               <input type="number" name="san-pham-x">
+               <input type="number" name="san-pham-x" value="3">
                <button class="plush">+</button>								
              </div>
            </div>
@@ -285,11 +285,12 @@
          <div  class="col-lg-2 plush-minus">
            <div class="row">
              <button class="minus">-</button>
-             <input type="number" name="san-pham-x">
+             <input type="number" name="san-pham-x" value="1"  min="0">
              <button class="plush">+</button>								
            </div>
          </div>
-       </section>		<section class="buying row">
+       </section>		
+       <section class="buying row">
         <div class="col-lg-3 col-md-4">
           <figure ><img src="img/product-blank.jpg"></figure>							
         </div>
@@ -304,7 +305,7 @@
        <div  class="col-lg-2 plush-minus">
          <div class="row">
            <button class="minus">-</button>
-           <input type="number" name="san-pham-x">
+           <input type="number" name="san-pham-x" value="1" min="0">
            <button class="plush">+</button>								
          </div>
        </div>
@@ -313,12 +314,12 @@
 
    <aside class="col-lg-3 col-md-4 pay">
      <section>						
-       <p>tạm tính:<span>5.970.300</span></p>
+       <p id="total">tạm tính:<span>5.970.300</span></p>
        <hr>
-       <p>thành tiền <span>5.970.300</span></p>
-       <p><span class="price">(Đã bao gồm VAT 10%)</span></p>
+       <p  id="total-tax">thành tiền <span>5.970.300</span></p>
+       <p><span class="decrease-price">(Đã bao gồm VAT 10%)</span></p>
        <form>
-        <input type="submit" name="" value='tiến hành đặt hàng'>
+        <input type="submit" name="" value='tiến hành đặt hàng' min="0">
       </form>
     </section>
   </aside>

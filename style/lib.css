@@ -295,6 +295,9 @@ nav.navbar-expand-lg.navbar-light.container .navbar-collapse .navbar-nav .dropdo
 	display: none;
 }
 /*box drowdown*/
+#navbarDropdown{
+	padding-right: 5em;
+}
 nav.navbar-expand-lg.navbar-light.container .navbar-collapse .navbar-nav  .dropdown-menu{
 	width: 260px;
 	background: rgba(250,250,250,0.9);

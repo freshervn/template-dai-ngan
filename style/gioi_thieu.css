@@ -1,8 +1,12 @@
+
 .about .menu ul{
 	list-style-type: none;
 	padding: 0;
 	position: relative;
 	width: 100%;
+		position: sticky;
+	top: 66px;
+	padding: 15px;
 }
 .about .menu ul li{
 	padding-left:  1em;
@@ -31,10 +35,11 @@
 	font-weight: 700;
 	text-decoration: none;
 	transition: 0.3s ease-in-out;
+	position: relative;
 }
-.about .menu ul li a:hover{
-	margin-left: 10px;
-	color: var(--theme-color-2);
+.about .menu ul li:hover a{
+	color: var(--theme-color-1);
+	padding-left: 15px;
 }
 .about .menu ul li a img{
 	margin-right: 0.5em;
@@ -46,9 +51,11 @@
 }*/
 .about .content{
 	color: black;
-}
-.about .content {
 	font-size: 18px;
+}
+.about .content section{
+	padding-top: 1em;
+	padding-bottom: 1em;
 }
 .about .content .title{
 	color: var(--theme-color-1);

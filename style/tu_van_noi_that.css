@@ -3,6 +3,9 @@
 	padding: 0;
 	position: relative;
 	width: 100%;
+			position: sticky;
+	top: 66px;
+	padding: 15px;
 }
 .about .menu ul li{
 	padding-left:  1em;
@@ -63,7 +66,12 @@
 	font-weight: bold;
 }	
 .about .menu ul li details address a {
-	display: inline-block;
+	display: block;
+	transition: 0.3s ease-in-out;
+}
+.about .menu ul li details address a:hover{
+	transform: translateX(15px);
+	color: var(--theme-color-1);
 }
 .about .menu ul li details a{
 	transition: 0s;

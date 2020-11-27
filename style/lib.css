@@ -287,6 +287,9 @@ nav{
 #navbarDropdown{
 	padding-right: 5.5em;
 }
+.navbar-light .navbar-toggler{
+	filter: invert(1);
+}
 nav.navbar-expand-lg.navbar-light.container .navbar-collapse .navbar-nav .nav-link {
 	color: white;
 	font-weight: 400px;

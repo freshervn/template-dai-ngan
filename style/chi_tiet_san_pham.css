@@ -147,7 +147,7 @@
 /*call-phone-number*/
 .call-phone-number .container{
 	border: 1px solid var(--theme-color-1);
-	max-width: 1198px;
+	max-width: 1200px;
 }
 .call-phone-number .container aside p{
 	color: var(--theme-color-2);

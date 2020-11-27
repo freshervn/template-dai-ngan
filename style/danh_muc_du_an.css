@@ -49,8 +49,10 @@
 	}
 	.about .content {
 		font-size: 18px;
+		font-family: UTM-normal;
 	}
 	.about .content .title{
+		font-family: UTM;
 		color: var(--theme-color-1);
 		text-transform: uppercase;
 		font-size: 25px;

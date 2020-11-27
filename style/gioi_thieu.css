@@ -56,6 +56,7 @@
 .about .content section{
 	padding-top: 1em;
 	padding-bottom: 1em;
+	font-family: UTM-normal;
 }
 .about .content .title{
 	color: var(--theme-color-1);
@@ -63,13 +64,15 @@
 	font-size: 25px;
 	position: relative;
 	font-weight: 700;
+	margin-bottom: 30px;
+	font-family: UTM;
 }
 .about .content .title::before{
 	content: "";
-	width: 80px;
+	width: 50px;
 	height: 2px;
 	position: absolute;
-	top:100%;
+	top:calc(100% + 14px);
 	background-color: var(--theme-color-1);
 }
 .about .content  figure{

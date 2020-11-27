@@ -704,7 +704,7 @@ footer .receive-messages form button:hover{
 		margin: 0;
 		width: 100%;
 		display: flex;
-		justify-content: space-between;
+		justify-content: space-around;
 		position: absolute;
 		bottom: 0px;
 	}
@@ -751,8 +751,8 @@ footer .receive-messages form button:hover{
 	background-color: #00a5f2;
 	border-radius: 50%;
 	position: absolute;
-	left: 50%;
-	transform: translateX(-50%);
+/*	left: 50%;
+	transform: translateX(-50%);*/
 	width: 50px;
 	height: 50px;
 	bottom: 10%;

@@ -86,9 +86,9 @@
 		text-align: left; 
 		color: black;
 	}
-		.about .content .project a{
-			text-decoration: none;
-		}
+	.about .content .project a{
+		text-decoration: none;
+	}
 	.about .content .project:hover{
 		box-shadow: 1px 1px 1px 1px #d5d5d5,-1px -1px 1px 1px #d5d5d5,1px -1px 1px 1px #d5d5d5,-1px 1px 1px 1px #d5d5d5;
 	}
@@ -119,10 +119,16 @@
 		color: black;
 		font-weight: 700;
 		font-size: 14px;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		display: -webkit-box;
+		-webkit-line-clamp:2;
+		-webkit-box-orient:vertical;	
+		min-height: 2.5em;
 	}
-		.about .content .project:hover .content h6{
-			color: var(--theme-color-1);
-		}
+	.about .content .project:hover .content h6{
+		color: var(--theme-color-1);
+	}
 	.about .content .project .content p:first-letter{
 		text-transform: uppercase;
 	}
@@ -137,6 +143,6 @@
 		min-height: 3em;	
 		font-size: 14px
 	}
-		.about .content .project:hover .content *{
+	.about .content .project:hover .content *{
 		font-weight: bold;
 	}

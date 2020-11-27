@@ -86,6 +86,7 @@
 	background: var(--note-color);
 	padding: 0.5em;
 	border: 1px solid #d5d5d5;
+	font-family: UTM-normal;
 }
 .product-details .detail p.description:first-letter{
 	text-transform: uppercase;
@@ -94,9 +95,11 @@
 	text-transform: uppercase;
 }
 .product-details .detail ul li {
+	font-family: UTM-normal;
 }
 .product-details .detail ul li span{
 	font-weight: 1000;	
+	font-family: UTM;
 }
 .product-details .detail ul li span::before{
 	content: ":";
@@ -104,7 +107,7 @@
 }
 .product-details .detail p span{
 	font-weight: bold;
-	color: var(--theme-color-1);
+	color: red;
 	font-size: 20px;
 }
 .product-details .detail button{
@@ -144,30 +147,35 @@
 /*call-phone-number*/
 .call-phone-number .container{
 	border: 1px solid var(--theme-color-1);
+	max-width: 1198px;
 }
-.call-phone-number .container aside h6{
-	color: var(--theme-color-1);
+.call-phone-number .container aside p{
+	color: var(--theme-color-2);
+	font-size: 14px;
 }
 .call-phone-number .container aside ul{
 	list-style-type: none;
 	padding: 0;
-
 }
 .call-phone-number .container aside li{
 	font-weight: 1000;
 	color: black;
+	font-size: 16px;
 }
 .call-phone-number .container aside li span{
 	float: right;
-	color: var(--theme-color-1);
+	color: var(--theme-color-2);
 	font-size: 20px;
 }
 /*product-details-2*/
 .product-details-2{
 	color: black;
+	font-family: UTM-normal;
+	font-size: 15px;
 }
 .product-details-2 h4{
 	text-transform: uppercase;
 	color: var(--theme-color-1);
 	font-weight: 700px;
+	font-family: UTM;
 }

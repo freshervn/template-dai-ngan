@@ -1,6 +1,6 @@
 /*tao mau*/
 :root{
-	--theme-color-1:#567e9d;
+	--theme-color-1:#015f9c;
 /*	--theme-color-1:#00083a; */
 	--theme-color-2:#567e9d; 
 	--text-color:#333333;
@@ -15,6 +15,7 @@
 	src:url('fonts/UTM Avo.ttf');
 	font-family: UTM-normal;
 }
+p{font-family: UTM-normal;}
 /*	font-family: UTM, sans-serif;	*/
 @keyframes appearance {
 	from {transform: translateY(50px); opacity: 0;}
@@ -33,6 +34,9 @@
 *:first-letter{
 	text-transform: uppercase;
 }
+a:first-leter{
+	text-transform: uppercase;
+}
 * {box-sizing: border-box;}
 .mobi{
 	display: none;
@@ -41,9 +45,6 @@
 	.mobi{
 		display: block;
 	}
-}
-a:first-letter{
-	text-transform: uppercase;
 }
 body{
 	/*	background: var(--theme-color-2);*/
@@ -1245,6 +1246,7 @@ body main article:nth-child(even){
 	-webkit-line-clamp:2;
 	-webkit-box-orient:vertical;	
 	min-height: 2.5em;
+	font-family: UTM;
 }
 .news section .owl-carousel .item .content p.description:first-letter{
 	text-transform: uppercase;
@@ -1276,15 +1278,20 @@ body main article.banner-bottom{
 		background-position: 0%, 100%;
 	}	
 }
+body main article.banner-bottom {
+	font-family: UTM;
+}
 body main article.banner-bottom p:first-child{
 	color: black;
 	font-size: 15px;
 	font-weight: 700;
+	font-family: UTM;
 }
 body main article.banner-bottom p.phone-number{
 	color:var(--theme-color-1);
 	font-size: 40px;
 	font-weight: 700;
+	font-family: UTM;
 }
 body main article.banner-bottom p{
 	color: #333;

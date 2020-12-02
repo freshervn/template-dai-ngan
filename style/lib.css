@@ -1116,6 +1116,7 @@ body main article:nth-child(even){
 	.product section .owl-carousel .item p span.old-price{
 		color: black;
 		text-decoration: line-through;
+		font-family: UTM;
 	}
 	.product section .owl-carousel .item p span.old-price::after,.list-product .item p span.new-price::after{
 		content: 'Đ';

@@ -74,4 +74,5 @@ background:var(--theme-color-2);
 		color: var(--text-color);
 		padding-top: 1.5em;
 		font-family: UTM-normal;
+		font-size: 13px;
 	}

@@ -77,6 +77,7 @@
 /*detai*/
 .product-details .detail{
 	color: black;
+	font-size: 13px;
 }
 .product-details .detail h1{
 	color: var(--theme-color-1);
@@ -92,15 +93,21 @@
 .product-details .detail p.description:first-letter{
 	text-transform: uppercase;
 }
+
 .product-details .detail ul li:first-letter{
 	text-transform: uppercase;
 }
+.product-details .detail ul li::marker{
+	padding: 0;
+	color: red;
+}
 .product-details .detail ul li {
 	font-family: UTM-normal;
+	padding: 0;
 }
 .product-details .detail ul li span{
 	font-weight: 1000;	
-	font-family: UTM-normal;
+	font-family: UTM;
 }
 .product-details .detail ul li span::before{
 	content: ":";
@@ -148,12 +155,23 @@
 }
 /*call-phone-number*/
 .call-phone-number .container{
+	
+}
+.call-phone-number .container .row{
 	border: 1px solid var(--theme-color-1);
-	max-width: 1200px;
+	width: 1200px;
+	margin: auto;
+	max-width: 100%;
+	padding: 15px 0px 0px;
 }
 .call-phone-number .container aside p{
 	color: var(--theme-color-2);
 	font-size: 14px;
+	margin-bottom: 0;
+	margin-top:  
+}
+.call-phone-number .container aside hr{
+	margin-top:2px; 
 }
 .call-phone-number .container aside ul{
 	list-style-type: none;

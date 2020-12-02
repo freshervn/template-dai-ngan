@@ -104,6 +104,7 @@
 .product-details .detail ul li {
 	font-family: UTM-normal;
 	padding: 0;
+	margin-bottom: 12px;
 }
 .product-details .detail ul li span{
 	font-weight: 1000;	

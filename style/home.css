@@ -98,13 +98,16 @@
 	.intro-2 .container{
 		background: url("../img/background-intro.jpg");
 		background-size: cover;
-		padding: 6em 2em;
+		padding: 6em 115px;
 		text-align: center;
+		position: relative;
 	}
-		.intro-2 .container h6{
-			font-weight: 700;
-		}
 		.intro-2 .container p{
 			padding-top: 1em;
+			text-align:justify;
+		}
+		.intro-2 .container span{
+			text-align: center;
+			font-weight: 700;
 		}
 		/*banner bottom*/

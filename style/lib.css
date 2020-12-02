@@ -17,6 +17,9 @@
 }
 p {font-family: UTM-normal;}
 /*	font-family: UTM, sans-serif;	*/
+input::placeholder{
+	font-family: UTM-normal;
+}
 @keyframes appearance {
 	from {transform: translateY(50px); opacity: 0;}
 	to {transform: translateY(0); opacity: 1;}
@@ -1081,6 +1084,7 @@ body main article:nth-child(even){
 	text-transform: uppercase;
 	font-weight: 700;
 	transition: 0.3 ease-in-out;
+	font-family: UTM-normal;
 }
 .product section .owl-carousel .item:hover .new,.product section .owl-carousel .item:hover .sale, .product section .owl-carousel .item:hover .sold{
 	opacity: 0;
@@ -1103,8 +1107,26 @@ body main article:nth-child(even){
 /*gia*/
 .product section .owl-carousel .item b{
 	color: red;
-	font-weight: 700;
+	font-weight:bold;
+	font-family: UTM;
 }
+.product section .owl-carousel .item a{
+	color: black;
+}
+	.product section .owl-carousel .item p span.old-price{
+		color: black;
+		text-decoration: line-through;
+	}
+	.product section .owl-carousel .item p span.old-price::after,.list-product .item p span.new-price::after{
+		content: 'Đ';
+		padding-left: 2px;
+	}
+	.product section .owl-carousel .item p span.new-price{
+		margin-left: 0em;
+		font-family: UTM;
+		color: red;
+	}
+
 /*banner gan footer*/
 .intro-2 {
 	padding-top: 2em;
@@ -1500,6 +1522,7 @@ body main article.banner-bottom p{
 		text-transform: uppercase;
 		font-weight: 700;
 		transition: 0.3 ease-in-out;
+		font-family: UTM-normal;
 	}
 	.list-product .item  :hover .new,.list-product .item  :hover .sale,.list-product .item  :hover .sold{
 		opacity: 0;
@@ -1515,6 +1538,9 @@ body main article.banner-bottom p{
 	-webkit-box-orient:vertical;	
 	min-height: 2.5em;
 	}
+	.list-product .item a{
+		color: black;
+	}
 	.list-product .item p:first-letter{
 		text-transform: uppercase;
 	}
@@ -1523,6 +1549,7 @@ body main article.banner-bottom p{
 		font-weight: 700;
 		height: 2.5em;
 	}
+
 	.list-product .item p span.old-price{
 		color: black;
 		text-decoration: line-through;
@@ -1533,4 +1560,6 @@ body main article.banner-bottom p{
 	}
 	.list-product .item p span.new-price{
 		margin-left: 0em;
+		font-family: UTM;
+		color: red;
 	}

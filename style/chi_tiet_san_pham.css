@@ -58,13 +58,18 @@
 	border: 1px solid #d5d5d5;
 	margin: 0;
 }
+.product-details .img figure{
+	width: 60%;
+	padding-top: 60%;
+	margin-left: 40%;
+}
 .product-details .img figure img,.product-details .main-img figure img{
 	width: calc( 100% );
 	position: absolute;
 	top: 0;
 	left: 0;
 	height: 100%;
-	padding: 10px;
+	padding: 5px;
 }
 /*main-img*/
 .product-details .main-img figure button{
@@ -89,6 +94,7 @@
 	padding: 0.5em;
 	border: 1px solid #d5d5d5;
 	font-family: UTM-normal;
+	margin-top: 20px;
 }
 .product-details .detail p.description:first-letter{
 	text-transform: uppercase;
@@ -117,7 +123,10 @@
 .product-details .detail p span{
 	font-weight: bold;
 	color: red;
-	font-size: 20px;
+	font-size: 17px;
+	font-family: UTM;
+}
+.product-details .detail p b{
 	font-family: UTM;
 }
 .product-details .detail button{

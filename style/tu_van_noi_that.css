@@ -1,3 +1,6 @@
+.about .menu{
+	padding: 0;
+}
 .about .menu ul{
 	list-style-type: none;
 	padding: 0;
@@ -37,6 +40,14 @@
 	text-decoration: none;
 	font-size: 13px;
 }
+.about .menu ul li > a::before {
+	content: url(../img/arrow_left.gif);
+	margin-right: 5px;
+}
+.about .menu ul li:first-child > a::before {
+	content: '';
+}
+
 .about .menu ul li:hover > a{
 	padding-left: 10px;
 	color: var(--theme-color-2);
@@ -46,29 +57,44 @@
 	margin-right: 0.5em;
 }
 /*neu la details*/
-.about .menu ul li:hover details summary,.about .menu ul li:hover details summary a{
+/*.about .menu ul li:hover details summary,.about .menu ul li:hover details summary a{
 	padding-left: 10px;
 	color: var(--theme-color-2);
 	transition: 0.3s ease-in-out;
-}
-.about .menu ul li details ::-webkit-details-marker {
+}*/
+/*.about .menu ul li details ::-webkit-details-marker {
 	display: none;
 }
+
 .about .menu ul li details summary{
 	display: flex;
 	justify-content: space-between;
 	outline: none;
 }	
-.about .menu ul li details summary span{
-	display: flex;
-	justify-content: space-between;
-	outline: none;
-	margin-right: 15px;
-	font-weight: bold;
-}	
-.about .menu ul li details address a {
+*/	
+.about .menu ul li address a {
 	display: block;
 	transition: 0.3s ease-in-out;
+	font-family: UTM-normal;
+	font-weight: normal;
+	color: #333;
+	display: block;
+	padding-left: 35px;
+	position: relative;
+	height: 28px;
+}
+.about .menu ul li address a::before{
+	content: url('../img/dot.gif');
+	position: absolute;
+	top:50%;
+	left: 20px ;
+	transform: translateY(-50%);
+	height: 5px;
+	width: 5px;
+	margin-right: 5px;
+}
+.about .menu ul li address a:hover{
+	color: var(--theme-color-1);
 }
 .about .menu ul li details address a:hover{
 	transform: translateX(15px);
@@ -79,7 +105,16 @@
 	font-size: 13px;
 }
 
-/*<img src="img/arrow_left.gif"> */
+/* <div class="item">
+        <p class="title mobi">Tin tức Tin tức Tin tức Tin tức</p>
+        <figure>
+          <img src="img/blank-picture.jpg">                    
+        </figure>
+        <div class="content">                                    
+          <p class="title pc">Tin tức</p>
+          <p class="description">tin tức chi tiết,tin tức chi tiết,tin tức chi tiết,tin tức chi tiết,tin tức chi tiết,tin tức chi tiết,tin tức chi tiết</p>
+        </div>
+      </div>  */
 /*chua lam xong*/
 /*.about .menu ul::before {
 	content: url(img/arrow_left.gif);
@@ -139,10 +174,11 @@
 		padding: 0;
 		padding-top: 61.8%;
 		position: relative;
+		overflow: hidden;
 	}
 	.about .content .project figure img{
-		width: 90%;
-		height: 90%;
+		width: 100%;
+		height: 100%;
 		position: absolute;
 		top: 50%;
 		left: 50%;
@@ -150,8 +186,8 @@
 		transform: translate(-50%,-50%);
 	}
 	.about .content .project:hover figure img{
-		width: 100%;
-		height: 100%;
+		width: 110%;
+		height: 110%;
 	}
 
 	.about .content .project .content{

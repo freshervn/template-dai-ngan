@@ -72,23 +72,27 @@
 	outline: none;
 }	
 */	
-.about .menu ul li address a {
-	display: block;
+.about .menu ul li address dt a{
 	transition: 0.3s ease-in-out;
 	font-family: UTM-normal;
 	font-weight: normal;
 	color: #333;
-	display: block;
-	padding-left: 35px;
+	
 	position: relative;
 	height: 28px;
+	line-height: 1.6em;
 }
-.about .menu ul li address a::before{
+ address dl dt{
+	position: relative;
+	margin-top: 0.5em;
+	padding-left: 30px;
+	padding-right: 10px;
+}
+.about .menu ul li address dt::before{
 	content: url('../img/dot.gif');
 	position: absolute;
-	top:50%;
-	left: 20px ;
-	transform: translateY(-50%);
+	top:8px;
+	left: 20px;
 	height: 5px;
 	width: 5px;
 	margin-right: 5px;

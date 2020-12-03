@@ -1,32 +1,48 @@
+.producer{
+	color: var(--theme-color-1);
+	font-family: UTM-normal;
+	font-weight: lighter;
+}
+span.clear{
+	color: var(--theme-color-1);
+	font-family: UTM;
+	cursor: pointer;
+}
+.cart {
+	font-size:13px;
+}	
 .cart h4{
 	color: var(--theme-color-1);
 	font-family: UTM, sans-serif;	
-	font-weight: 700;
+	font-weight: normal;
 	position: relative;
 	margin-top: 1.5em;
 	text-transform: uppercase;
-	font-size: 25px;
+	font-size: 23px;
 	margin-bottom: 1em;
 	text-align: center;
 }
 .cart h4::after{
 	content: '';
-	width: 68px;		
-	height: 3px;
+	width: 50px;		
+	height: 2px;
 	background: var(--theme-color-1);
 	position: absolute;
-	top: 110%;
+	bottom:  -26px;
 	left: 50%;
 	transform: translateX(-50%);
 }
+.cart .row{
+	padding-top: 25px;
+}
 .cart aside section{
-	border: 1px solid #d5d5d5;
 	padding-top: 15px;
 	padding-bottom: 0;
 	border-radius: 10px;
 }
 .cart aside .buying{
 	margin-top: 1em;
+	background: white;
 }
 .cart aside .buying:first-child{
 	margin-top: 0;
@@ -35,7 +51,6 @@
 	position: relative;
 	width: 100%;
 	padding-top: 100%;
-	border: 1px solid #d5d5d5;
 }
 .cart aside .buying figure img{
 	width: 100%;
@@ -46,9 +61,10 @@
 }
 .cart aside .buying .information-product{
 	color: black;
+
 }
 .cart aside .buying .information-product p{
-	font-size: 16px;
+	font-size: 13px;
 	margin-bottom: 0.2em;
 }
 .cart aside .buying .information-product p:last-child{
@@ -56,21 +72,42 @@
 	font-weight: bold;
 }
 .cart aside .buying .information-product h3{
-	font-size: 18px;
+	font-size: 15px;
 	text-transform: uppercase;
 	color: var(--theme-color-1);
+	font-family: UTM-normal;
 }
 .cart aside .buying .information-product b{
 	margin-right: 0.5em;
+	font-family: UTM;
+	color: #333;
+	font-size:12px;
+	font-weight: lighter;
 }
 .cart aside .price{
 	color: red;
 	font-weight: bold;
 }
+.cart aside .row {
+	padding-top: 10px;
+}
+.cart aside .buying .box-price p{
+	text-align: right;
+}
+.cart aside .buying .price{
+	color: black;
+	font-family: UTM;
+	text-align-last: right;
+	font-size:12px;
+}
 .cart aside .buying  .plush-minus {
 	display: flex;
 	justify-content: space-around;
-	padding-bottom: 15px;
+	font-family: UTM-normal;
+	padding-top: 0;
+}
+.cart aside .buying  .plush-minus .row{
+	padding-top: 0;
 }
 .cart aside .buying  .plush-minus button{
 	border: 1px solid #d5d5d5;
@@ -108,7 +145,13 @@
 {
 .cart .pay{
 	margin-top: 15px;
+	background: white;
 }	
+}
+.bill {
+	background-color: white;
+	padding: 15px;
+	padding-bottom: 25px;
 }
 .cart .pay section{
 	color: black;
@@ -124,7 +167,7 @@ text-transform: uppercase;
 }
 .cart .pay section span{
 	float: right;
-	font-weight: bold;
+	font-weight: lighter;
 }
 .cart .pay section form{
 	padding-top: 15px;
@@ -147,4 +190,13 @@ text-transform: uppercase;
 	transform: translateY(0px);
 	filter: brightness(120%);
 	border:1px solid white;
+}
+#total-tax{
+	margin-bottom: 0;
+}
+#total-tax span{
+	color: red !important;
+	font-family: UTM;
+	margin-bottom: 0;
+	padding-bottom: 0;
 }

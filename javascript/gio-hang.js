@@ -28,8 +28,8 @@ function stringtoint(stringpriece){
 	}
 	return a;
 }
-
 function updatepriece(){	
+
 	var s=0;
 	var lprice=document.getElementsByClassName('price');
 	for (var i = lprice.length - 1; i >= 0; i--) {
@@ -37,8 +37,20 @@ function updatepriece(){
 		$(amount).find('input').val();
 		s=s+parseInt(stringtoint(lprice[i].textContent)) * $(amount).find('input').val();
 	}
-	$('#total span').html(s);	
-	$('#total-tax span').html(s*90/100);	
+	var price='';
+	s+='';
+	for (var i = s.length - 1; i >= 0; i--) {
+		price =s[i]+price;
+		if (((s.length - i)%3==0)&&(i!=0)) { price='.'+price;}
+	}
+	$('#total span').html(price);	
+	// tax
+	s=s*100/100;
+	for (var i = s.length - 1; i >= 0; i--) {
+		price =s[i]+price;
+		if (((s.length - i)%3==0)&&(i!=0)) { price='.'+price;}
+	}
+	$('#total-tax span').html(price);	
 }
 
 	// function deleteproduct(){
@@ -50,12 +62,13 @@ function updatepriece(){
 	$(document).keydown(updatepriece);
 	$(document).click(updatepriece);
 
-	$('.minus').click(
-		function(){
-			if ($(this).parent().find('input').val()==0) {
-				$(this).parent().parent().parent().remove();
-			};
-		});
+// xoa neu xuong 0
+$('.minus').click(
+	function(){
+		if ($(this).parent().find('input').val()==0) {
+			$(this).parent().parent().parent().remove();
+		};
+	});
 
 // function  findchildnote(pr){
 // 	for (var i = pr.childNodes.length - 1; i >= 0; i--) {
@@ -65,3 +78,8 @@ function updatepriece(){
 // 	}
 // }
 // findchildnote(amount);
+$('span.clear').click(
+	function(){
+		alert('bạn có chắc xóa sản phẩm này');
+		$(this).parent().parent().parent().remove();
+	})

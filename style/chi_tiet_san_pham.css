@@ -12,6 +12,13 @@
 .product-details .img.img-2{
 	display: none;
 }
+.img-2 {
+	margin: 0;
+	flex-direction: row;
+}
+.img-2 .owl-carousel.owl-theme.owl-loaded.owl-drag{
+	flex-direction: row;
+}
 .product-details .img.img-3{
 	display: none;
 }
@@ -20,10 +27,7 @@
 		display: none;
 	}
 	.product-details .img.img-2{
-		display: none;
-	}
-	.product-details .img.img-3{
-		display: flex;
+		display: block;
 	}
 }
 
@@ -33,9 +37,7 @@
 	}
 	.product-details .img.img-2{
 		display: flex;
-	}
-	.product-details .img.img-3{
-		display: none;
+		padding-top: 0.5em;
 	}
 }
 @media only screen and (max-width: 992px){
@@ -63,7 +65,7 @@
 	padding-top: 60%;
 	margin-left: 40%;
 }
-.product-details .img figure img,.product-details .main-img figure img{
+ .img figure img,.main-img figure img{
 	width: calc( 100% );
 	position: absolute;
 	top: 0;
@@ -79,6 +81,21 @@
 .product-details .main-img figure button.next{
 	right: 0;
 }
+.item.img-2{
+	padding: 0;
+}
+.main-img figure.img-2 {
+	margin:0;
+	padding-top: 100%;
+	width: 100%;
+}
+figure.img-2 img{
+	width: 100%;
+	top: 0;
+	left: 0;
+	transform: translate(0);
+}
+
 /*detai*/
 .product-details .detail{
 	color: black;
@@ -165,7 +182,6 @@
 }
 /*call-phone-number*/
 .call-phone-number .container{
-	
 }
 .call-phone-number .container .row{
 	border: 1px solid var(--theme-color-1);
@@ -173,6 +189,20 @@
 	margin: auto;
 	max-width: 100%;
 	padding: 15px 0px 0px;
+}
+.call-phone-number .container aside {
+	overflow-wrap: break-word;
+	overflow: hidden !important;
+}
+.fb-like{
+	width: 100% !important;
+	overflow: hidden !important;
+	color: white !important;
+}
+@media only screen and max-width:(567px){
+	div.fb-like{
+	display: none;
+	}	
 }
 .call-phone-number .container aside p{
 	color: var(--theme-color-2);
@@ -208,4 +238,126 @@
 	color: var(--theme-color-1);
 	font-weight: 700px;
 	font-family: UTM;
+	font-size: 19px;
 }
+	/*owl carowlel*/
+.product-details-2 blockquote{
+	background: whitesmoke;
+	padding: 15px;
+	font-size: 13px;
+	color: #333;
+	line-height: 22px;
+}
+.product-details-2 blockquote b{
+	font-family: UTM;
+}
+/*contetn*/
+.list-product > .container >h2.left-side {
+	text-align: left;
+	font-size: 18px;
+}
+.list-product > .container >h2.left-side::after{
+	content: none;
+}
+
+
+/*dot*/
+.owl-carousel.owl-theme .owl-dots {
+	bottom: 45px;
+	position: relative;
+}
+/*normal*/
+.owl-carousel.owl-theme .owl-dots .owl-dot span{
+	width: 10px;
+	height: 10px;
+	background: blue;
+	opacity: 0.3;
+}
+/* efect*/
+
+/*hover*/
+.owl-carousel.owl-theme .owl-dots .owl-dot span:hover{
+	background: blue;
+	opacity: 0.8;
+}
+/*active*/
+.owl-carousel.owl-theme .owl-dots .owl-dot.active span{
+	background: blue;
+	opacity: 1;
+} 
+.owl-carousel.owl-theme .owl-dots .owl-dot{
+	outline: none;
+}
+
+/*nav*/
+/*khung*/
+.owl-carousel.owl-theme .owl-nav{
+	display: flex;
+	width: 100%;
+	left: 0;
+	margin: 0;
+	padding: 0;
+	transition: 0.5s ease-in-out;
+}
+/*button*/
+.owl-carousel.owl-theme .owl-nav button {
+	border-radius: 50%;
+	outline: none;
+	transform: rotate(0deg);
+	transition: 0.5s ease-in-out;
+}
+.owl-carousel.owl-theme .owl-nav button.owl-prev{
+	position: absolute;
+	left: calc(-2em);
+}
+.owl-carousel.owl-theme .owl-nav button.owl-next{
+	position: absolute;
+	right: calc(-2em);
+}
+/*span*/
+.owl-carousel.owl-theme .owl-nav button span{
+	text-align: center;
+	font-weight: 700;
+	transform: scale(3.0);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform:translate(-50%,-50%);
+	transition: 0.5s ease-in-out;
+}
+
+/*position*/
+.owl-nav button.owl-next , .owl-nav button.owl-prev {
+	top: 10%;
+}
+/*normal*/
+/*nav*/
+.owl-carousel.owl-theme .owl-nav {
+	opacity: 1;
+}
+/*button*/
+.owl-carousel.owl-theme .owl-nav button {
+	width: 30px;
+	height: 30px;
+	background:blue;
+}
+/*span*/
+.owl-carousel.owl-theme .owl-nav button span{
+	color: white;
+	font-size: 20px;
+}
+/*hover*/
+
+/*nav*/
+.owl-carousel.owl-theme:hover .owl-nav{
+	opacity: 1;
+}
+/*button*/
+.owl-carousel.owl-theme .owl-nav button:hover{
+	background: red;
+}
+/*span*/
+.owl-carousel.owl-theme .owl-nav button:hover span{
+	color: white;
+}
+/*owl carowlel end*/

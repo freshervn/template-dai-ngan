@@ -1,4 +1,22 @@
-  
+ 
+	$(' .img-2 .owl-carousel').owlCarousel({
+		loop:false,
+		margin:10,
+		nav:true,
+		dots:true,
+		responsive:{
+			0:{
+				items:3
+			},
+			600:{
+				items:3
+			},
+			1000:{
+				items:5
+			}
+		}
+	})
+
 $(document).ready(function(){
 // khi ve dien thoai thi nhay o anhr xuong cuoi
 
@@ -12,9 +30,7 @@ $(document).ready(function(){
 $('.product-details .container .img figure').click(
 	function(){
 		var image = $(this).clone();
-		$('.product-details .container .main-img ').html(image);
+		$('.product-details .container .main-img .window').html(image);
 	});
-
-
 });
 

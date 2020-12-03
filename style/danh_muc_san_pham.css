@@ -2,6 +2,7 @@
 .banner-product{
 	background: var(--theme-color-1);
 	justify-content: space-between;
+	border-top: 1px solid white;
 }
 .banner-product .content{
 }
@@ -57,6 +58,7 @@ background:var(--theme-color-2);
 	font-weight: 700;
 	text-align: center;
 	position: relative;
+	color: white;
 }
 /*underline*/
 .banner-product .name-category h1::after{
@@ -70,9 +72,25 @@ background:var(--theme-color-2);
 	bottom: -16px;
 }
 		/*intro-product*/
-	.intro-product{
+	body main article.intro-product{
 		color: var(--text-color);
 		padding-top: 1.5em;
 		font-family: UTM-normal;
 		font-size: 13px;
+		background-color: white;
 	}
+.intro-product .container{
+	background: whitesmoke;
+	padding-top: 20px;
+	padding-left: 20px;
+	padding-bottom: 33px;
+}
+.intro-product .container b{
+	color: black;
+	font-family: UTM;
+	color: #333;
+}
+.intro-product .container dt{
+	color: #333;
+	font-weight: normal;
+}

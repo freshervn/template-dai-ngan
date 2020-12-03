@@ -38,6 +38,7 @@
 	font-size: 1.8rem
 	padding: 1em;
 	line-height: 1.6em;
+	color: white;
 }
 @media only screen and (max-width: 992px){
 	.banner .content h1{

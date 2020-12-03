@@ -27,7 +27,7 @@ $('.news .owl-carousel').owlCarousel({
 		dots:true,
 		responsive:{
 			0:{
-				items:1
+				items:2
 			},
 			567:{
 				items:2

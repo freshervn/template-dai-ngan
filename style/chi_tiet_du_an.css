@@ -91,6 +91,9 @@
 .product-details .detail p.description:first-letter{
 	text-transform: uppercase;
 }
+.product-details .detail ul{
+	margin-top: 30px;
+}
 .product-details .detail ul li:first-letter{
 	text-transform: uppercase;
 }
@@ -212,31 +215,17 @@
 .about .menu ul li a img{
 	margin-right: 0.5em;
 }
-/* <div class="item">
-        <p class="title mobi">Tin tức Tin tức Tin tức Tin tức</p>
-        <figure>
-          <img src="img/blank-picture.jpg">                    
-        </figure>
-        <div class="content">                                    
-          <p class="title pc">Tin tức</p>
-          <p class="description">tin tức chi tiết,tin tức chi tiết,tin tức chi tiết,tin tức chi tiết,tin tức chi tiết,tin tức chi tiết,tin tức chi tiết</p>
-        </div>
-      </div>  */
-/*chua lam xong*/
-/*.about .menu ul::before {
-	content: url(img/arrow_left.gif);
-}*/
 .about .content{
 	color: black;
 }
 .about .content {
-	font-size: 18px;
+	font-size: 13px;
 	font-family: UTM-normal;
 }
 .about .content .title{
 	color: var(--theme-color-1);
 	text-transform: uppercase;
-	font-size: 25px;
+	font-size: 22px;
 	position: relative;
 	font-weight: 700;
 	margin-bottom: 30px;
@@ -265,3 +254,99 @@
 	text-align: center;	
 	font-weight: 700;
 }
+.about .content .project {
+		/*margin: 5px;*/		
+		text-align: left; 
+		color: black;
+		padding: 10px;
+	}
+	.about .content .project a{
+		text-decoration: none;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.about .content .project:hover{
+		box-shadow: 1px 1px 1px 1px #d5d5d5,-1px -1px 1px 1px #d5d5d5,1px -1px 1px 1px #d5d5d5,-1px 1px 1px 1px #d5d5d5;
+	}
+	.about .content .project figure{
+		width: 100%;
+		padding: 0;
+		padding-top: 56.25%;
+		position: relative;
+		overflow: hidden;
+	}
+	.about .content .project figure img{
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transition: 0.3s ease-in-out;
+		transform: translate(-50%,-50%);
+	}
+	.about .content .project:hover figure img{
+		width: 110%;
+		height: 110%;
+	}
+	.about .content .project  h6{
+		color: black;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		display: -webkit-box;
+		-webkit-line-clamp:2;
+		-webkit-box-orient:vertical;	
+		min-height: 2.5em;	
+		font-size: 13px;
+		color: #333;
+		font-family: UTM;
+		padding: 0;
+	}
+	.about .content .project:hover  h6{
+		color: var(--theme-color-1);
+
+	}
+	@media only screen and (max-width: 568px){
+		.about .content .project figure{
+			width: 50%;
+			padding-top: 50%;
+		}
+		.about .content .project  h6{
+			width: 100%;
+			margin: 0;
+		}
+	}
+	.about .content .project  p:first-letter{
+		text-transform: uppercase;
+	}
+	.about .content .project  p{
+		font-family: UTM-normal;
+		color: black;
+		font-weight: 400;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		display: -webkit-box;
+		-webkit-line-clamp:3;
+		-webkit-box-orient:vertical;	
+		min-height: 3em;	
+		font-size: 13px;
+		width: 100%;
+	}
+	@media only screen and (max-width: 992px){
+		.about .content .row{
+			padding-top: 30px;
+		}
+		.about .content .project figure{
+			padding-top: 28.125%;
+		}
+		.about .content .project  h6{
+			margin: 0;
+			text-overflow: ellipsis;
+			display: -webkit-box;
+			-webkit-line-clamp:5;
+			-webkit-box-orient:vertical;	
+			max-height: 6em;	
+	}
+		.about .content .project  p{
+				width: 100%;
+		}
+	}

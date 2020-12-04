@@ -1,6 +1,11 @@
 .about .menu{
 	padding: 0;
 }
+@media only screen and (max-width: 768px){
+	.about .menu{
+	display: none;
+	}	
+}
 .about .menu ul{
 	list-style-type: none;
 	padding: 0;
@@ -126,8 +131,17 @@
 	.about .content{
 		color: black;
 	}
+	.about .content .col-lg-4.col-md-6{
+	}
 	.about .content {
-		font-size: 18px;
+		font-size: 13px;
+		padding: 0;
+	}
+	@media only screen and (max-width: 568px){
+		.about .content {
+		font-size: 13px;
+		padding: 15px;
+	}	
 	}
 	.about .content .title{
 		color: var(--theme-color-1);
@@ -137,6 +151,7 @@
 		font-weight: 700;
 		margin-bottom: 30px;
 		font-family: UTM;
+		padding-top: 15px;
 	}
 	.about .content .title::before{
 		content: "";
@@ -162,13 +177,16 @@
 	font-weight: 700;
 	}*/
 	.about .content .project {
-		margin: 5px;
-		border: 1px solid #d5d5d5;
+		/*margin: 5px;*/		
 		text-align: left; 
 		color: black;
+		margin-top: 10px;
+
 	}
 	.about .content .project a{
 		text-decoration: none;
+		display: flex;
+		flex-wrap: wrap;
 	}
 	.about .content .project:hover{
 		box-shadow: 1px 1px 1px 1px #d5d5d5,-1px -1px 1px 1px #d5d5d5,1px -1px 1px 1px #d5d5d5,-1px 1px 1px 1px #d5d5d5;
@@ -176,7 +194,7 @@
 	.about .content .project figure{
 		width: 100%;
 		padding: 0;
-		padding-top: 61.8%;
+		padding-top: 56.25%;
 		position: relative;
 		overflow: hidden;
 	}
@@ -193,29 +211,34 @@
 		width: 110%;
 		height: 110%;
 	}
-
-	.about .content .project .content{
-		padding: 10px;
-	}
-	.about .content .project .content h6{
+	.about .content .project  h6{
 		color: black;
-		font-weight: 700;
-		font-size: 14px;
 		overflow: hidden;
 		text-overflow: ellipsis;
 		display: -webkit-box;
 		-webkit-line-clamp:2;
 		-webkit-box-orient:vertical;	
 		min-height: 2.5em;	
-		font-size: 14px
+		font-size: 13px;
+		color: #333;
 	}
-	.about .content .project:hover .content h6{
+	.about .content .project:hover  h6{
 		color: var(--theme-color-1);
 	}
-	.about .content .project .content p:first-letter{
+	@media only screen and (max-width: 568px){
+		.about .content .project figure{
+			width: 50%;
+			padding-top: 50%;
+		}
+		.about .content .project  h6{
+			width: 50%;
+			margin: 0;
+		}
+	}
+	.about .content .project  p:first-letter{
 		text-transform: uppercase;
 	}
-	.about .content .project .content p{
+	.about .content .project  p{
 		font-family: UTM-normal;
 		color: black;
 		font-weight: 400;
@@ -225,8 +248,25 @@
 		-webkit-line-clamp:3;
 		-webkit-box-orient:vertical;	
 		min-height: 3em;	
-		font-size: 14px
+		font-size: 13px;
 	}
-	.about .content .project:hover .content *{
-		font-weight: bold;
+	@media only screen and (max-width: 768px){
+		.about .content .project figure{
+			width: 50%;
+			padding-top: 28.125%;
+		}
+		.about .content .project  h6{
+			width: 50%;
+			margin: 0;
+			padding-left: 10px;
+			padding-right: 10px;
+			text-overflow: ellipsis;
+			display: -webkit-box;
+			-webkit-line-clamp:5;
+			-webkit-box-orient:vertical;	
+			max-height: 6em;	
+	}
+		.about .content .project  p{
+			width: 100%;
+		}
 	}

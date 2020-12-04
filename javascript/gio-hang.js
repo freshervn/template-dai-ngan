@@ -80,6 +80,6 @@ $('.minus').click(
 // findchildnote(amount);
 $('span.clear').click(
 	function(){
-		alert('bạn có chắc xóa sản phẩm này');
+		alert('Bạn có chắc xóa sản phẩm này');
 		$(this).parent().parent().parent().remove();
 	})

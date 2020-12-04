@@ -32,6 +32,23 @@ span.clear{
 	left: 50%;
 	transform: translateX(-50%);
 }
+@media only screen and (max-width: 567px){
+	.cart h4::after{
+		display: none;
+	}
+	.cart h4{
+		background: white;
+		font-size: 16px;
+		padding: 10px;
+		margin: 0;
+	}
+	.cart h4::before{
+		content: url('../img/fa-long-arrow-left.png');
+		position: absolute;
+		left: 10px;
+		top: 25%;
+	}
+}
 .cart .row{
 	padding-top: 25px;
 }
@@ -99,12 +116,14 @@ span.clear{
 	font-family: UTM;
 	text-align-last: right;
 	font-size:12px;
+
 }
 .cart aside .buying  .plush-minus {
 	display: flex;
 	justify-content: space-around;
 	font-family: UTM-normal;
 	padding-top: 0;
+	padding-bottom: 15px;
 }
 .cart aside .buying  .plush-minus .row{
 	padding-top: 0;
@@ -159,6 +178,12 @@ span.clear{
 	top: 66px;
 	padding: 15px;
 }
+@media only screen and (max-width: 567px){
+	.cart .pay section{
+
+	padding: 0px;
+}
+}
 .cart .pay section p{
 	width: 100%;
 }
@@ -199,4 +224,23 @@ text-transform: uppercase;
 	font-family: UTM;
 	margin-bottom: 0;
 	padding-bottom: 0;
+}
+.desktop-none{
+	display: none;
+}
+@media only screen and (max-width: 568px){
+	.mobi-none{
+		display: none;
+	}
+	.desktop-none{
+		display: block;
+	}
+}
+.top-right-position{
+	position: absolute;
+	top: 0;
+	right: 1em;
+	color: red !important;
+}.top-right-position span{
+	color: red;
 }

@@ -58,6 +58,11 @@
 	border: 1px solid #d5d5d5;
 	margin: 0;
 }
+.product-details .img figure{
+	width: 60%;
+	padding-top: 60%;
+	margin-left: 40%;
+}
 .product-details .img figure img,.product-details .main-img figure img{
 	width: calc( 100% );
 	position: absolute;

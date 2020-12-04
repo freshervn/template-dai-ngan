@@ -121,6 +121,11 @@ figure.img-2 img{
 .product-details .detail ul li:first-letter{
 	text-transform: uppercase;
 }
+@media only screen and (max-width: 578px){
+	.product-details .detail ul{
+		padding-left: 15px;
+	}
+}
 .product-details .detail ul li::marker{
 	padding: 0;
 	color: red;
@@ -141,7 +146,7 @@ figure.img-2 img{
 .product-details .detail p span{
 	font-weight: bold;
 	color: red;
-	font-size: 17px;
+	font-size: 19px;
 	font-family: UTM;
 }
 .product-details .detail p b{
@@ -158,9 +163,11 @@ figure.img-2 img{
 	color: white;
 	position: relative;
 	overflow: hidden;
+	font-family: UTM-normal;
 }
 .product-details .detail button h6{
 	text-transform: uppercase;
+	font-family: UTM;
 	margin:0;
 }
 .product-details .detail button::before {
@@ -308,11 +315,11 @@ figure.img-2 img{
 }
 .img-2 .owl-carousel.owl-theme .owl-nav button.owl-prev{
 	position: absolute;
-	left: calc(-2.5em);
+	left: calc(-2em);
 }
 .img-2 .owl-carousel.owl-theme .owl-nav button.owl-next{
 	position: absolute;
-	right: calc(-2.5em);
+	right: calc(-2em);
 }
 /*span*/
 .img-2 .owl-carousel.owl-theme .owl-nav button span{

@@ -1,7 +1,10 @@
 article {
-	border: 3px solid var(--theme-color-1);
 	border-radius: 10px;
-	margin-top: 2em;
+	margin-top: 0;
+	font-size: 13px;
+	background: white !important;
+	padding-left:  120px !important;
+	padding-right:  120px !important;
 }
 @media only screen and (max-width: 568px){
 	article {
@@ -14,14 +17,29 @@ main header {
 	justify-content: space-between;
 	padding: 1em;
 }
+header.row{
+	padding-top: 0 !important;
+}
 main header img {
-	height: 150px;
+	height: 50px;
 }
 .name-company{
 	font-weight: bold;
+	font-family: UTM;
+	font-size: 16px;
+}
+p{
+	margin-bottom: 3px;
 }
 main .timeline{
-	
+	margin-top: 15px;
+	margin-top: 15px;
+}
+.day{
+	font-family: UTM;
+	font-style: italic;
+	color: #333;
+	margin-top: 15px;
 }
 main .timeline .row:first-child{
 	color: black;
@@ -31,11 +49,11 @@ main .timeline .row:first-child{
 	font-weight: 500;
 }
 main .timeline .row:last-child{
-	width: 80%;
+	width: 90%;
 	margin: auto;
 }
 main .timeline .col-6{
-	height: 8px;
+	height: 6px;
 	border: 1px solid #00b6f0;
 }
 main .timeline .col-6.active{
@@ -43,9 +61,11 @@ main .timeline .col-6.active{
 }
 main .timeline  .cart::before{
 	content: '1';
+	color: white;
+	font-family: UTM-normal;
 	width: 26px;
 	height: 26px;
-	font-size: 20px;
+	font-size: 18px;
 	border-radius: 50%;
 	background-color: #00b6f0;
 	position: absolute;
@@ -60,9 +80,11 @@ main .timeline  .cart::before{
 }
 main .timeline .info::before{
 	content: '2';
+	color: white;
+	font-family: UTM-normal;
 	width: 26px;
 	height: 26px;
-	font-size: 20px;
+	font-size: 18px;
 	border-radius: 50%;
 	background-color: #00b6f0;
 	position: absolute;
@@ -77,9 +99,11 @@ main .timeline .info::before{
 }
 main .timeline .info::after{
 	content: '3';
+	color: white;
+	font-family: UTM-normal;
 	width: 26px;
 	height: 26px;
-	font-size: 20px;
+	font-size: 18px;
 	border-radius: 50%;
 	background-color: #00b6f0;
 	position: absolute;
@@ -94,16 +118,18 @@ main .timeline .info::after{
 }
 main  article section form{
 	margin-top: 1em;
+	font-family: UTM-normal;
 }
 main  article section form *{
 	margin-top: 5px;
 }
 main  article section form input::placeholder{
-	opacity: 0;
+	opacity: 1;
 }
 main  article section form label,main  article section form p{
 	color: black;
 	display: inline-block;
+	font-family: UTM-normal;
 }
 @media only screen and (max-width: 568px){
 	main  article section form input::placeholder{

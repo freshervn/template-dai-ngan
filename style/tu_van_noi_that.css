@@ -270,3 +270,16 @@
 			width: 100%;
 		}
 	}
+		.other p{
+			color: var(--theme-color-1);
+			font-family: UTM;
+			font-size: 20px;
+		}
+	.other li{
+		color: gray;
+	}
+	.other a{
+		color: #333;
+		text-decoration-line: none;
+		display: block;
+	}

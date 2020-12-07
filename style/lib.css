@@ -449,6 +449,7 @@ nav.navbar-expand-lg.navbar-light.container .navbar-collapse .navbar-nav .nav-it
 	overflow-y: hidden;
 	overflow-x: hidden;
 	transition: 0.3s ease-in-out;
+
 }
 /*@media only screen and (max-width: 992px){
 	
@@ -461,6 +462,7 @@ nav.navbar-expand-lg.navbar-light.container .navbar-collapse .navbar-nav .nav-it
 nav.navbar-expand-lg.navbar-light.container .navbar-collapse .navbar-nav .nav-item.dropdown .dropdown-menu .continous-dropdown .dropdown-item ~ .dropdown-dropdown-item a + .dropdown-3-item:hover{
 	height: auto;
 	margin-left: 0px;
+	margin-left: 30px;
 }
 .dropdown .dropdown-menu.show{
 	padding-top: 0;
